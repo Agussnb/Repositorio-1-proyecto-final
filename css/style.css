@@ -1,0 +1,362 @@
+/*Alumno: Agustin Barrero, Comisión: 33025*/
+/* Estilo del index */
+h1  
+{
+    font-size: xx-large;
+    font-family: 'Kelvingi Rodrige';
+    color: yellow;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    border: groove 3px yellow;
+}
+ body 
+{
+    background-image: url(../img/Imagen\ fondo\ para\ todo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/* Contenedor padre de los enlances */
+  #contenedorEnlaces
+{
+    margin-left: 850px;
+    display: flex;
+ }
+/* Class de la ul de los enlaces a las demas paginas */
+.enlacesPaginas 
+{
+    border: 2px solid ;
+    border-radius: 3px;
+    font-size:medium;
+    font-family: 'Kelvingi Rodrige';
+    background-color:yellow;   
+    display: inline;
+    padding: 4px;
+    margin-left: 40px;
+}
+  /* class de cada pagina */
+.linkPaginas
+{
+    display: inline;
+}
+nav
+{
+    width: 500px;
+}
+.divListaGeneral
+{
+    width: 175px;
+    height: 300px;
+    background-color: yellow;
+    overflow: auto;
+    border: solid 3px black;
+    margin: 25px;
+}
+/* Clase de la lista general */
+#listaGeneral
+{
+    display: block;
+}
+ /* Clase de los items de la lista general */
+#itemGral
+{
+    color:maroon
+}
+ /* Clase del titulo de la lista general */
+#tituloListadoGeneral
+{
+    text-align: center;
+}
+/* FIN ESTILO INDEX */
+/* --------------------------------------------------------- */
+/* INICIO ESTILO DE LAS RAQUETAS */
+.divRaqueta 
+{
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    border: 2px solid rgb(251, 255, 0);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.contenedorPadreRaquetasWilson 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap:10px;
+    grid-row-gap:20px;  
+
+}
+
+/* Titulo de la seccion con las raquetas de Wilson */
+#raquetasWilson {
+    text-align: center;
+    font-size: medium;
+    font-family: 'Kelvingi Rodrige';
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+    border: solid 1px yellow;
+    width: 100px;
+    margin-left: 650px;
+    justify-content: center;
+}
+.proOpen
+{
+    height: 400px;
+    width: 400px;
+}
+.blade98V8Rg
+{
+    height: 400px;
+    width:400px;
+}
+.blade98V8
+{
+    height: 400px;
+    width:400px;
+}
+.clash100ProV2
+{
+    height: 400px;
+    width:400px;
+}
+.clash100Pro
+{
+    height: 400px;
+    width:400px;
+}
+.clash100Silver
+{
+    height: 400px;
+    width:400px;
+}
+.rolandGarrosTeam102
+{
+    height: 400px;
+    width:400px;
+}
+#raquetasHead
+{
+    text-align: center;
+    font-size: medium;
+    font-family: 'Kelvingi Rodrige';
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+    border: solid 1px yellow;
+    width: 100px;
+    margin-left: 650px;
+    justify-content: center;
+}
+.contenedorPadreRaquetasHead
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-column-gap:10px;
+    grid-row-gap:20px;  
+    
+}
+
+
+
+/* FIN ESTILO RAQUETAS */
+/* --------------------------------------------------------- */
+/* INICIO Estilo de NOSOTROS */
+.cuadroInformativoNosotros
+{
+    width: 175px;
+    height: 240px;
+    font-size: 16px;
+    overflow-y: scroll;
+    font-family:'Kelvingi Rodrige';
+    background-color: yellow;
+    border: solid 3px black;
+    margin: 25px;
+    background-color: yellow;
+    border-radius: 8px;
+   
+}
+.h2InformativoNosotros
+{
+    background-color: yellow;
+    font-family:'Kelvingi Rodrige';
+    font-size: 18px;
+    border: solid 2px;
+    width: 165px;
+    margin-left: 25px;
+}
+footer
+{
+    margin-top: 200px;
+}
+.divFooter
+{
+    width: 1320px;
+    background-color: yellow;
+    text-align: center;
+    position: static;
+}
+/* FIN ESTILO NOSOTROS */
+/* --------------------------------------------------------- */
+/* INICIO Estilo del html PALETAS */
+#paletasWilson
+{
+    font-size: medium;
+    font-family: 'Kelvingi Rodrige';
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+    border: solid 1px yellow;
+    width: 100px;
+    margin-left: 600px;
+    justify-content: center;
+}
+.contenedorPadrePaletasWilson
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-column-gap:10px;
+    grid-row-gap:20px;  
+
+}
+.divPaleta
+{
+    width: 400px;
+    height: 250px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    border: 2px solid rgb(251, 255, 0);
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.belaLt
+{
+    width: 400px;
+    height: 250px;
+}
+.bladeProV2
+{
+    width: 400px;
+    height: 250px;
+}
+.belaElite
+{
+    width: 400px;
+    height: 250px;
+}
+.proStaffElite
+{
+    width: 400px;
+    height: 250px;
+}
+.proStaffTeamPadel
+{
+    width: 400px;
+    height: 250px;
+}
+.proStaffLtV2
+{
+    width: 400px;
+    height: 250px;
+}
+.proStaffEliteV2
+{
+    width: 400px;
+    height: 250px;
+}
+.padelCupra
+{
+    width: 400px;
+    height: 250px;
+}
+#paletasHead
+{
+    font-size: medium;
+    font-family: 'Kelvingi Rodrige';
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+    border: solid 1px yellow;
+    width: 100px;
+    margin-left: 600px;
+    justify-content: center;
+}
+.contenedorPadrePaletasHead
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-column-gap:10px;
+    grid-row-gap:20px;  
+
+}
+/* FIN ESTILO PALETAS */
+/* --------------------------------------------------------- */
+/* INICIO ESTILO ACCESORIOS */
+#accesoriosWilson 
+{
+    text-align: center;
+    font-size: medium;
+    font-family: 'Kelvingi Rodrige';
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+    border: solid 1px yellow;
+    width: 100px;
+    margin-left: 650px;
+    justify-content: center;
+}
+
+.divAccesorios
+{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(251, 255, 0);
+    border-radius: 5px;
+ 
+}
+.contenedorPadreAccesoriosWilson
+{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+grid-template-rows: 2fr;
+grid-column-gap:10px;
+grid-row-gap:20px; 
+}
+#accesoriosHead
+{
+    text-align: center;
+    font-size: medium;
+    font-family: 'Kelvingi Rodrige';
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+    border: solid 1px yellow;
+    width: 100px;
+    margin-left: 650px;
+    justify-content: center;
+}
+.contenedorPadreAccesoriosHead
+{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+grid-template-rows: 2fr;
+grid-column-gap:10px;
+grid-row-gap:20px; 
+}
+/* FIN ESTILO ACCESORIOS */
