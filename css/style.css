@@ -35,6 +35,10 @@ h1
     padding: 4px;
     margin-left: 40px;
 }
+.enlacesPaginas:hover
+{
+    background-color: white;
+}
   /* class de cada pagina */
 .linkPaginas
 {
