@@ -184,10 +184,15 @@ nav
     background-color: yellow;
     border: solid 3px black;
     margin: 25px;
-    background-color: yellow;
     border-radius: 8px;
+    animation-name: color;
+    animation-duration: 5s;
    
 }
+@keyframes color {
+    from {background-color: yellow;}
+    to {background-color: aqua;}
+  }
 .h2InformativoNosotros
 {
     background-color: yellow;
@@ -196,7 +201,13 @@ nav
     border: solid 2px;
     width: 165px;
     margin-left: 25px;
+    animation-name: color;
+    animation-duration: 5s;
 }
+@keyframes color {
+    from {background-color: yellow;}
+    to {background-color: aqua;}
+  }
 footer
 {
     margin-top: 200px;
