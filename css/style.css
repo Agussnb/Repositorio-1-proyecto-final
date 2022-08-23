@@ -56,6 +56,8 @@ nav
     overflow: auto;
     border: solid 3px black;
     margin: 25px;
+    padding: 50px;
+    
 }
 /* Clase de la lista general */
 #listaGeneral
@@ -71,6 +73,37 @@ nav
 #tituloListadoGeneral
 {
     text-align: center;
+}
+/* Estilo de la imagen que va en el centro de la pagina */
+.padreImagenUno
+{
+    display: flex;
+    max-width: 1000px;
+    max-height: 1000px;
+}
+.imagenUno
+{
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    border: solid 3px;
+    margin-left: 500px;
+    flex-direction: column;
+    
+}
+.h2RecomendacionesSemana
+{
+    margin-left: 506px;
+   
+    background-color: yellow;
+    padding: 1px;
+    border: solid 1px;
+    max-width: fit-content;
+}
+.contenedorPadreIndex
+{
+    display: flex;
+    flex-direction: column;
 }
 /* FIN ESTILO INDEX */
 /* --------------------------------------------------------- */
