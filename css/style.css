@@ -125,6 +125,22 @@ font-size: 21px;
     height: 70px ;
     width: 70px;
 }
+.btn{
+margin-right: 100px;
+background-color: white;
+color: black;
+}
+.mb-2
+{
+    background-color: yellow;
+    border-radius: 2px;
+    border: solid 1px;
+    width: 555px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    
+}
 /* FIN ESTILO INDEX */
 /* --------------------------------------------------------- */
 /* INICIO ESTILO DE LAS RAQUETAS */
@@ -157,6 +173,7 @@ font-size: 21px;
         grid-column-gap:10px;
     }
 }
+
 @media screen and (max-width:480px){
     h1{
         font-size: small;
@@ -267,7 +284,13 @@ font-size: 21px;
     grid-row-gap:20px;  
     
 }
-
+@media screen and (max-width:480px) {
+    .contenedorPadreRaquetasHead
+    {
+        grid-template-columns: 1fr;
+        grid-column-gap:10px;
+    }
+}
 
 
 /* FIN ESTILO RAQUETAS */
