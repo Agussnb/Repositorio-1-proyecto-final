@@ -49,6 +49,7 @@ nav
 {
     width: 500px;
 }
+/* Clase de la lista general */
 .divListaGeneral
 {
     width: 200px;
@@ -59,19 +60,19 @@ nav
     margin: 25px;
     margin-bottom: 50px;
     padding: 50px;
-    
+   
 }
-/* Clase de la lista general */
+/* id de la lista general */
 #listaGeneral
 {
     display: block;
 }
- /* Clase de los items de la lista general */
+ /* id de los items de la lista general */
 #itemGral
 {
     color:maroon
 }
- /* Clase del titulo de la lista general */
+ /* id del titulo de la lista general */
 #tituloListadoGeneral
 {
     text-align: center;
@@ -84,6 +85,7 @@ nav
     display: flex;
     flex-direction: column;
 }
+/* Fondo del form control  */
 .mb-3
 {
     background-color: yellow;
@@ -93,11 +95,13 @@ nav
     margin-left: 25px;
     
 }
+/* form control, donde va el mail y la pregunta/consulta */
 .form-control
 {
   width: 500px;
   margin-left: 25px;
 }
+/* Donde va el texto que dice "tu email, tu consulta" */
 .form-label
 {
     font-family:'Kelvingi Rodrige'; 
@@ -115,6 +119,7 @@ margin-left: 25px;
 font-family:'Kelvingi Rodrige'; 
 font-size: 21px;
 }
+/* imagen del logo */
 .img-fluid
 {
     height: 70px ;
