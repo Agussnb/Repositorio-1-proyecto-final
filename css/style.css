@@ -150,6 +150,52 @@ font-size: 21px;
     grid-row-gap:20px;  
 
 }
+@media screen and (max-width:480px) {
+    .contenedorPadreRaquetasWilson
+    {
+        grid-template-columns: 1fr;
+        grid-column-gap:10px;
+    }
+}
+@media screen and (max-width:480px){
+    h1{
+        font-size: small;
+    }
+}
+@media screen and (max-width:480px){
+    #raquetasWilson{
+        font-size: small;
+        margin-right: 100px;
+    }
+}
+@media screen and (max-width:480px){
+    .img-fluid{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media screen and (max-width:480px){
+    .enlacesPaginas{
+        border: 2px solid ;
+        border-radius: 3px;
+        font-size:small;
+        font-family: 'Kelvingi Rodrige';
+        background-color:yellow;   
+        display: inline;
+   
+    }
+}
+@media screen and (max-width:480px){
+    #contenedorEnlaces{
+        margin-left: 600px;
+    }
+}
+@media screen and (max-width:480px){
+   .linkPaginas{
+        display: inline;
+    }
+}
+
 
 /* Titulo de la seccion con las raquetas de Wilson */
 #raquetasWilson {
