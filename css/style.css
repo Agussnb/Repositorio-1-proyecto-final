@@ -1,5 +1,10 @@
 /*Alumno: Agustin Barrero, Comisión: 33025*/
 /* Estilo del index */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
 h1  
 {
     font-size: xx-large;
@@ -144,6 +149,11 @@ color: black;
 /* FIN ESTILO INDEX */
 /* --------------------------------------------------------- */
 /* INICIO ESTILO DE LAS RAQUETAS */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
 .divRaqueta 
 {
     width: 400px;
@@ -296,6 +306,11 @@ color: black;
 /* FIN ESTILO RAQUETAS */
 /* --------------------------------------------------------- */
 /* INICIO Estilo de NOSOTROS */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
 .cuadroInformativoNosotros
 {
     width: 175px;
@@ -344,6 +359,11 @@ footer
 /* FIN ESTILO NOSOTROS */
 /* --------------------------------------------------------- */
 /* INICIO Estilo del html PALETAS */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
 #paletasWilson
 {
     font-size: medium;
@@ -443,6 +463,11 @@ footer
 /* FIN ESTILO PALETAS */
 /* --------------------------------------------------------- */
 /* INICIO ESTILO ACCESORIOS */
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
 #accesoriosWilson 
 {
     text-align: center;
