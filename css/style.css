@@ -500,6 +500,13 @@ grid-template-rows: 2fr;
 grid-column-gap:10px;
 grid-row-gap:20px; 
 }
+@media screen and (max-width:480px) {
+    .contenedorPadreAccesoriosWilson
+    {
+        grid-template-columns: 1fr;
+        grid-column-gap:10px;
+    }
+}
 #accesoriosHead
 {
     text-align: center;
@@ -520,5 +527,12 @@ grid-template-columns: 1fr 1fr 1fr ;
 grid-template-rows: 2fr;
 grid-column-gap:10px;
 grid-row-gap:20px; 
+}
+@media screen and (max-width:480px) {
+    .contenedorPadreAccesoriosHead
+    {
+        grid-template-columns: 1fr;
+        grid-column-gap:10px;
+    }
 }
 /* FIN ESTILO ACCESORIOS */
