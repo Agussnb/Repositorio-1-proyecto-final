@@ -26,34 +26,21 @@ h1
 /* Contenedor padre de los enlances */
   #contenedorEnlaces
 {
-    margin-left: 850px;
+
     display: flex;
  }
 /* Class de la ul de los enlaces a las demas paginas */
-.enlacesPaginas 
-{
-    border: 2px solid ;
-    border-radius: 3px;
-    font-size:medium;
-    font-family: 'Kelvingi Rodrige';
-    background-color:yellow;   
-    display: inline;
-    padding: 4px;
-    margin-left: 40px;
-}
-.enlacesPaginas:hover
-{
-    background-color: white;
-}
-  /* class de cada pagina */
-.linkPaginas
-{
-    display: inline;
-}
 nav
 {
-    width: 500px;
+    border: 2px solid ;
+    font-size:small;
+    font-family: 'Kelvingi Rodrige';
+    background-color:yellow;   
+    padding: 2px;
+    margin-bottom: 30px;
+    margin-left: 25px;
 }
+
 /* Clase de la lista general */
 .divListaGeneral
 {
