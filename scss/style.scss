@@ -42,6 +42,8 @@ body {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+    width: 100%;
+    max-width: 100%;
     
 }
 
@@ -70,9 +72,9 @@ body {
     font-family: $font-family;
 }
 
-.container-sm {
-    width: 200px;
-    height: 300px;
+.container{
+    width:200px;
+    height: 400px;
     background-color: yellow;
     overflow: auto;
     border: solid 3px black;
@@ -98,16 +100,14 @@ h3 {
 
 .mb-3 {
     background-color: yellow;
-    border-radius: 2px;
+    border-radius: 5px;
     border: solid 1px;
     width: 555px;
     margin-left: 25px;
+    
 }
 
 .mb-2 {
-    background-color: yellow;
-    border-radius: 2px;
-    border: solid 1px;
     width: 555px;
     margin-left: 25px;
     display: flex;
@@ -141,12 +141,69 @@ footer {
 }
 
 .divFooter {
-    width: 1320px;
+    width: 100%;
     background-color: yellow;
     text-align: center;
     position: static;
 }
+@media screen and (max-width:600px){
+    .container-sm{
+        font-size:$font-size-sm;
+        width:100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    #tituloListadoGeneral{
+        font-size: $font-size-sm;
+    }
+}
+@media screen and (max-width:600px) {
+    .enlacesPaginas {
+        border: 2px solid;
+        border-radius: 3px;
+        font-size: small;
+        font-family: 'Kelvingi Rodrige';
+        background-color: yellow;
+        display: inline;
 
+    }
+}
+
+@media screen and (max-width:600px) {
+    .linkPaginas {
+        display: inline;
+    }
+}
+
+@media screen and (max-width:600px){
+    body{
+        max-width: 400px;
+    }
+}
+@media screen and (max-width:600px){
+    .mb-3{
+        max-width: 250px ;
+    }
+}
+@media screen and (max-width:600px){
+    .mb-2{
+        max-width: 180px ;
+    }
+}
+@media screen and (max-width:600px){
+    .form-label{
+        max-width: 250px ;
+ 
+    }
+}
+@media screen and (max-width:600px){
+    .form-control{
+        max-width: 250px;
+        margin: 0;
+
+    }
+}
 
 //Raquetas
 * {
@@ -272,33 +329,9 @@ footer {
 }
 
 @media screen and (max-width:600px) {
-    .enlacesPaginas {
-        border: 2px solid;
-        border-radius: 3px;
-        font-size: small;
-        font-family: 'Kelvingi Rodrige';
-        background-color: yellow;
-        display: inline;
-
-    }
-}
-
-@media screen and (max-width:600px) {
-    .linkPaginas {
-        display: inline;
-    }
-}
-
-@media screen and (max-width:600px) {
     .contenedorPadreRaquetasHead {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
-    }
-}
-
-@media screen and (max-width:600px){
-    body{
-        max-width: 400px;
     }
 }
 
