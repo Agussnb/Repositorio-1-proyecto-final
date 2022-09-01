@@ -12,6 +12,7 @@ h1 {
   border: groove 3px yellow; }
 
 body {
+  background-image: url("../img/imagen fondo para todo.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
