@@ -240,6 +240,10 @@ footer {
     grid-template-columns: 1fr;
     grid-column-gap: 10px; } }
 
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 400px; } }
+
 /* INICIO Estilo de NOSOTROS */
 * {
   margin: 0;
