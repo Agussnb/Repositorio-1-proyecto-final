@@ -120,17 +120,17 @@ footer {
   text-align: center;
   position: static; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   .container-sm {
     font-size: small;
     width: 100%;
     height: 100%; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   #tituloListadoGeneral {
     font-size: small; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   .enlacesPaginas {
     border: 2px solid;
     border-radius: 3px;
@@ -139,29 +139,46 @@ footer {
     background-color: yellow;
     display: inline; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   .linkPaginas {
     display: inline; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   body {
-    max-width: 400px; } }
+    max-width: 100%; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   .mb-3 {
-    max-width: 250px; } }
+    max-width: 180px; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   .mb-2 {
     max-width: 180px; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   .form-label {
-    max-width: 250px; } }
+    max-width: 180px; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   .form-control {
-    max-width: 250px;
+    max-width: 180px;
+    margin: 0; } }
+
+@media screen and (max-width: 580px) {
+  .mb-3 {
+    max-width: 50%; } }
+
+@media screen and (max-width: 580px) {
+  .mb-2 {
+    max-width: 50%; } }
+
+@media screen and (max-width: 580px) {
+  .form-label {
+    max-width: 50%; } }
+
+@media screen and (max-width: 580px) {
+  .form-control {
+    max-width: 50%;
     margin: 0; } }
 
 * {
@@ -245,27 +262,27 @@ footer {
   grid-column-gap: 10px;
   grid-row-gap: 20px; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   .contenedorPadreRaquetasWilson {
     grid-template-columns: 1fr;
     grid-column-gap: 10px; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   h1 {
     font-size: small;
     width: max-content; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   #raquetasWilson {
     font-size: small;
     margin-right: 100px; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   .img-fluid {
     width: 30px;
     height: 30px; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) and (min-width: 200px) {
   .contenedorPadreRaquetasHead {
     grid-template-columns: 1fr;
     grid-column-gap: 10px; } }
@@ -427,7 +444,7 @@ footer {
   grid-column-gap: 10px;
   grid-row-gap: 20px; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 200px) {
   .contenedorPadreAccesoriosWilson {
     grid-template-columns: 1fr;
     grid-column-gap: 10px; } }
@@ -451,7 +468,7 @@ footer {
   grid-column-gap: 10px;
   grid-row-gap: 20px; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) and (min-width: 200px) {
   .contenedorPadreAccesoriosHead {
     grid-template-columns: 1fr;
     grid-column-gap: 10px; } }
