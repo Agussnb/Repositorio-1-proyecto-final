@@ -217,32 +217,44 @@ footer {
   padding: 2px; }
 
 .proOpen {
-  height: 400px;
-  width: 400px; }
+  height: 390px;
+  width: 390px;
+  border: 1px; }
 
 .blade98V8Rg {
-  height: 400px;
-  width: 400px; }
+  height: 390px;
+  width: 390px;
+  border: 1px; }
 
 .blade98V8 {
-  height: 400px;
-  width: 400px; }
+  height: 390px;
+  width: 390px;
+  border: 1px; }
 
 .clash100ProV2 {
-  height: 400px;
-  width: 400px; }
+  height: 390px;
+  width: 390px;
+  border: 1px; }
 
 .clash100Pro {
-  height: 400px;
-  width: 400px; }
+  height: 390px;
+  width: 390px;
+  border: 1px; }
 
 .clash100Silver {
-  height: 400px;
-  width: 400px; }
+  height: 390px;
+  width: 390px;
+  border: 1px; }
 
 .rolandGarrosTeam102 {
-  height: 400px;
-  width: 400px; }
+  height: 390px;
+  width: 390px;
+  border: 1px; }
+
+.proStaff97 {
+  height: 390px;
+  width: 390px;
+  border: 1px; }
 
 #raquetasHead {
   text-align: center;
@@ -263,7 +275,47 @@ footer {
   grid-column-gap: 10px;
   grid-row-gap: 20px; }
 
-@media screen and (max-width: 360px) and (min-width: 200px) {
+.attitudeElite {
+  height: 390px;
+  width: 390px;
+  border: 1px; }
+
+.attitudePro {
+  height: 390px;
+  width: 390px;
+  border: 1px; }
+
+.extremePro {
+  height: 390px;
+  width: 390px;
+  border: 1px; }
+
+.extremeTour {
+  height: 390px;
+  width: 390px;
+  border: 1px; }
+
+.challengeMp {
+  height: 390px;
+  width: 390px;
+  border: 1px; }
+
+.gravityTour {
+  height: 390px;
+  width: 390px;
+  border: 1px; }
+
+.prestigePro {
+  height: 390px;
+  width: 390px;
+  border: 1px; }
+
+.radicalPro {
+  height: 390px;
+  width: 390px;
+  border: 1px; }
+
+@media screen and (max-width: 1000px) and (min-width: 200px) {
   .contenedorPadreRaquetasWilson {
     grid-template-columns: 1fr;
     grid-column-gap: 10px; } }
@@ -273,17 +325,26 @@ footer {
     font-size: small;
     width: max-content; } }
 
-@media screen and (max-width: 360px) and (min-width: 200px) {
+@media screen and (max-width: 1000px) and (min-width: 200px) {
   #raquetasWilson {
     font-size: small;
-    margin-right: 100px; } }
+    position: relative;
+    left: -400px;
+    margin-top: 25px; } }
+
+@media screen and (max-width: 1000px) and (min-width: 200px) {
+  #raquetasHead {
+    font-size: small;
+    position: relative;
+    left: -400px;
+    margin-bottom: 25px; } }
 
 @media screen and (max-width: 360px) and (min-width: 200px) {
   .img-fluid {
     width: 30px;
     height: 30px; } }
 
-@media screen and (max-width: 360px) and (min-width: 200px) {
+@media screen and (max-width: 1000px) and (min-width: 200px) {
   .contenedorPadreRaquetasHead {
     grid-template-columns: 1fr;
     grid-column-gap: 10px; } }
@@ -480,6 +541,30 @@ footer {
   grid-template-rows: 2fr;
   grid-column-gap: 10px;
   grid-row-gap: 20px; }
+
+@media screen and (max-width: 1000px) and (min-width: 200px) {
+  .contenedorPadrePaletasWilson {
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px; } }
+
+@media screen and (max-width: 1000px) and (min-width: 200px) {
+  .contenedorPadrePaletasHead {
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px; } }
+
+@media screen and (max-width: 1000px) and (min-width: 200px) {
+  #paletasWilson {
+    font-size: small;
+    position: relative;
+    left: -400px;
+    margin-top: 25px; } }
+
+@media screen and (max-width: 1000px) and (min-width: 200px) {
+  #paletasHead {
+    font-size: small;
+    position: relative;
+    left: -400px;
+    margin-bottom: 25px; } }
 
 /* INICIO ESTILO ACCESORIOS */
 * {
