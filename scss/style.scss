@@ -78,6 +78,7 @@ body {
     background-color: yellow;
     overflow: auto;
     border: solid 3px black;
+    border-radius: 5px;
     margin: 25px;
     margin-bottom: 50px;
     padding: 50px;
@@ -393,6 +394,7 @@ footer {
     font-size: 18px;
     border: solid 2px;
     width: 165px;
+    margin-top: 25px;
     margin-left: 25px;
     animation-name: color;
     animation-duration: 5s;
@@ -407,6 +409,89 @@ footer {
         background-color: aqua;
     }
 }
+.padreSectionInformativo{
+    display: $dF;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 50px;
+    
+    
+}
+.hijoSectionInformativo{
+    background-color: #3BBDB6;
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    max-height: 1000px;
+    width: 750px;
+    height: 750px;
+    border-radius: 10px;
+    position: relative;
+    top: -335px;
+}
+#cardSectionInformativo{
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 25px;
+    max-width: 500px;
+    max-height: 700px;
+    width: fit-content;
+    font-family: 'Kelvingi Rodrige';
+    font-size: 20px;
+
+}
+.parrafoCardInformativo{
+    text-align: center;
+}
+
+@media screen and (max-width:1200px) and (min-width:200px){
+    .padreSectionInformativo{
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:200px){
+.hijoSectionInformativo{
+    position: relative;
+    top: 50px;
+    width: 450px;
+    height: 450px;
+}
+}
+@media screen and (max-width:1200px) and (min-width:200px){
+    #cardSectionInformativo{
+        font-size: $font-size-sm;
+        width: 400px;
+        height: 400px;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width:400px) and (min-width:200px){
+    #cardSectionInformativo{
+        font-size: $font-size-sm;
+        width: 500px;
+        height: 500px;
+    }
+    }
+    @media screen and (max-width:700px) and (min-width:200px){
+        #cardSectionInformativo{
+            font-size: $font-size-xs;
+            width: 500px;
+            height: 400px;
+        }
+        }
+        @media screen and (max-width:700px) and (min-width:200px){
+            .hijoSectionInformativo{
+                width: 300px;
+                height: 450px;
+            }
+        }
+
+
+
+
 
 /* INICIO Estilo del html PALETAS */
 * {
