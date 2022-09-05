@@ -136,6 +136,16 @@ h3 {
     margin-left: 25px;
     font-size: 16px;
 }
+.consultaProducto{
+        background-color: yellow;
+        border: solid 3px;
+        border-radius: 5px;
+        padding: 10px;
+        width: fit-content;
+        margin-left: 25px;
+        font-family: 'Kelvingi Rodrige';
+        font-size: 21px;
+}
 
 footer {
     margin-top: 200px;
@@ -170,6 +180,15 @@ footer {
 
     }
 }
+@media screen and (max-width:300px) {
+    .navbar{
+        position: relative;
+        right: -5px;
+    }
+}
+
+
+
 
 @media screen and (max-width:360px) and (min-width:200px){
     .linkPaginas {
@@ -225,6 +244,14 @@ footer {
         max-width: 50%;
         margin: 0;
     }
+}
+@media screen and (max-width:580px) {
+.consultaProducto{
+    font-size: $font-size-sm;
+    padding: 8px;
+    max-width: 45%;
+
+}
 }
 
 //Raquetas
