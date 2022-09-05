@@ -728,9 +728,11 @@ footer {
     background-color: black;
     padding: 5px;
     border: solid 1px yellow;
-    width: 100px;
-    margin-left: 650px;
+    width: 120px;
+    position: relative;
+    right: -600px;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .divAccesorios {
@@ -766,9 +768,11 @@ footer {
     background-color: black;
     padding: 5px;
     border: solid 1px yellow;
-    width: 100px;
-    margin-left: 650px;
+    width: 120px;
+    position: relative;
+    right: -600px;
     justify-content: center;
+    margin-top: 15px;
 }
 
 .contenedorPadreAccesoriosHead {
