@@ -621,11 +621,6 @@ footer {
   grid-column-gap: 10px;
   grid-row-gap: 20px; }
 
-@media screen and (max-width: 480px) and (min-width: 200px) {
-  .contenedorPadreAccesoriosWilson {
-    grid-template-columns: 1fr;
-    grid-column-gap: 10px; } }
-
 #accesoriosHead {
   text-align: center;
   font-size: medium;
@@ -647,9 +642,44 @@ footer {
   grid-column-gap: 10px;
   grid-row-gap: 20px; }
 
-@media screen and (max-width: 480px) and (min-width: 200px) {
+@media screen and (max-width: 600px) {
   .contenedorPadreAccesoriosHead {
     grid-template-columns: 1fr;
+    grid-column-gap: 10px; } }
+
+@media screen and (max-width: 600px) {
+  .contenedorPadreAccesoriosWilson {
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px; } }
+
+@media screen and (max-width: 600px) {
+  #accesoriosHead {
+    position: relative;
+    left: 100px; } }
+
+@media screen and (max-width: 600px) {
+  #accesoriosWilson {
+    position: relative;
+    left: 100px; } }
+
+@media screen and (min-width: 600px) {
+  #accesoriosHead {
+    position: relative;
+    left: 300px; } }
+
+@media screen and (min-width: 600px) {
+  #accesoriosWilson {
+    position: relative;
+    left: 300px; } }
+
+@media screen and (max-width: 900px) and (min-width: 580px) {
+  .contenedorPadreAccesoriosWilson {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px; } }
+
+@media screen and (max-width: 900px) and (min-width: 580px) {
+  .contenedorPadreAccesoriosHead {
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px; } }
 
 /* FIN ESTILO ACCESORIOS */
