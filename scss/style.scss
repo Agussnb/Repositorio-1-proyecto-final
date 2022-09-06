@@ -52,8 +52,8 @@ body {
 }
     nav {
         border: 2px solid;
-        font-size: $font-size-sm;
         font-family: $font-family;
+        font-size: $font-size-md;
         background-color: yellow;
         padding: 2px;
     }
@@ -73,10 +73,9 @@ body {
 }
 
 .container{
-    width:200px;
-    height: 400px;
-    background-color: yellow;
+    @include cuadros(200px, 400px);
     overflow: auto;
+    background-color: yellow;
     border: solid 3px black;
     border-radius: 5px;
     margin: 25px;
@@ -122,8 +121,7 @@ h3 {
 }
 
 .img-fluid {
-    height: 70px;
-    width: 70px;
+   @include cuadros(70px, 70px);
 }
 
 .form-control {
@@ -150,20 +148,17 @@ h3 {
     display: $dF;
     max-width: 1000px;
     max-height: 1000px;
-    width: fit-content;
-    height: fit-content;
+   @include cuadros(fit-content, fit-content);
 
     
 
 }
 .hijoContenedorExplicativo{
     background-color: #f0d60f;
-    font-family: $font-family;
-    font-size: $font-size-md;
+   @include textos($font-size-md);
     max-width: 500px;
     max-height: 500px;
-    width: fit-content;
-    height: fit-content;
+    @include cuadros(fit-content, fit-content);
     display: $dF;
     position: relative;
     right: -600px;
@@ -865,3 +860,23 @@ footer {
 }
 
 /* FIN ESTILO ACCESORIOS */
+
+// MIXINS
+@mixin textos($font-size:16px){
+    font-size: $font-size;
+    font-family: $font-family;
+}
+@mixin cuadros($width:300px, $height:300px){
+    width: $width;
+    height: $height;
+}
+@mixin bordes(){
+    border: solid 5px;
+    border-radius: 5px;
+}
+@mixin margenes($margen:25px){
+    margin: $margen;
+}
+@mixin paddings($padding:5px){
+    padding:$padding;
+}

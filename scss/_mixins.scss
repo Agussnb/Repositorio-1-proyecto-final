@@ -1,0 +1,18 @@
+@mixin textos($font-size:16px){
+    font-size: $font-size;
+    font-family: $font-family;
+}
+@mixin cuadros($width:300px, $height:300px){
+    width: $width;
+    height: $height;
+}
+@mixin bordes(){
+    border: solid 5px;
+    border-radius: 5px;
+}
+@mixin margenes($margen:25px){
+    margin: $margen;
+}
+@mixin paddings($padding:5px){
+    padding:$padding;
+}
