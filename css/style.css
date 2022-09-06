@@ -393,7 +393,7 @@ footer {
     grid-template-columns: 1fr;
     grid-column-gap: 10px; }
   .divRaqueta {
-    margin-left: 5px; } }
+    margin-left: px; } }
 
 @media screen and (max-width: 360px) and (min-width: 200px) {
   h1 {
@@ -707,14 +707,14 @@ footer {
   border: solid 1px yellow;
   width: 120px;
   position: relative;
-  right: -600px;
+  left: 600px;
   justify-content: center;
   margin-top: 15px; }
 
 .divAccesorios {
   width: 300px;
   height: 300px;
-  background-color: black;
+  background-color: white;
   color: white;
   border: 2px solid #fbff00;
   border-radius: 5px; }
@@ -778,7 +778,7 @@ footer {
     position: relative;
     left: 300px; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   #accesoriosWilson {
     position: relative;
     left: 300px; } }

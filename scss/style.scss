@@ -448,7 +448,7 @@ visibility:hidden ;
         grid-column-gap: 10px;
     }
     .divRaqueta{
-        margin-left: 5px;
+        margin-left: px;
     }
 }
 
@@ -827,7 +827,7 @@ visibility:hidden ;
     border: solid 1px yellow;
     width: 120px;
     position: relative;
-    right: -600px;
+    left: 600px;
     justify-content: center;
     margin-top: 15px;
 }
@@ -835,7 +835,7 @@ visibility:hidden ;
 .divAccesorios {
     width: 300px;
     height: 300px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     color: white;
     border: 2px solid rgb(251, 255, 0);
     border-radius: 5px;
@@ -912,7 +912,7 @@ visibility:hidden ;
       left: 300px;
     }
 }
-@media screen and (min-width:600px) {
+@media screen and (max-width:600px) {
     #accesoriosWilson{
       position: relative;
       left: 300px;
