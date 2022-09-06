@@ -146,6 +146,38 @@ h3 {
         font-family: 'Kelvingi Rodrige';
         font-size: 21px;
 }
+.contenedorExplicativo{
+    display: $dF;
+    max-width: 1000px;
+    max-height: 1000px;
+    width: fit-content;
+    height: fit-content;
+
+    
+
+}
+.hijoContenedorExplicativo{
+    background-color: #f0d60f;
+    font-family: $font-family;
+    font-size: $font-size-md;
+    max-width: 500px;
+    max-height: 500px;
+    width: fit-content;
+    height: fit-content;
+    display: $dF;
+    position: relative;
+    right: -600px;
+    top: -750px;
+    flex-direction: column;
+    border: solid 4px;
+
+}
+.h5HijoContenedorExplicativo{
+    background-color: #15b6eb;
+    font-family: $font-family;
+    font-size: $font-size-md;
+    border-bottom: solid 4px;
+}
 
 footer {
     margin-top: 200px;
@@ -269,8 +301,10 @@ footer {
     padding: 5px;
     border: solid 1px yellow;
     width: 100px;
-    margin-left: 650px;
+    position: relative;
+    right: -600px;
     justify-content: center;
+    margin-top: 25px;
 }
 
 .contenedorPadreRaquetasWilson {
@@ -350,8 +384,10 @@ footer {
     padding: 5px;
     border: solid 1px yellow;
     width: 100px;
-    margin-left: 650px;
+    position: relative;
+    right: -600px;
     justify-content: center;
+    margin-top: 25px;
 }
 
 .contenedorPadreRaquetasHead {
