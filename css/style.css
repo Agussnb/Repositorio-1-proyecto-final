@@ -402,14 +402,14 @@ footer {
   #raquetasWilson {
     font-size: small;
     position: relative;
-    left: -400px;
+    left: 250px;
     margin-top: 25px; } }
 
 @media screen and (max-width: 1000px) and (min-width: 200px) {
   #raquetasHead {
     font-size: small;
     position: relative;
-    left: -400px;
+    left: 250px;
     margin-bottom: 25px; } }
 
 @media screen and (max-width: 360px) and (min-width: 200px) {
