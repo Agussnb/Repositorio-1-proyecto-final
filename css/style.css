@@ -11,6 +11,17 @@ header {
   padding: 10px;
   background-color: #f0d60f; }
 
+header nav {
+  width: 90%;
+  max-width: 1000px;
+  margin: 10px auto; }
+
+header nav ul li {
+  float: left; }
+
+header nav ul li a:hover {
+  background-color: #d8ca5a; }
+
 .logo {
   display: flex;
   align-items: center; }
@@ -41,8 +52,8 @@ body {
 
 nav {
   border: 2px solid;
-  font-size: small;
   font-family: "Kelvingi Rodrige";
+  font-size: medium;
   background-color: yellow;
   padding: 2px; }
 
@@ -54,32 +65,31 @@ nav {
 
 #tituloListadoGeneral {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   font-family: "Kelvingi Rodrige"; }
 
 .container {
   width: 200px;
   height: 400px;
-  background-color: yellow;
+  font-size: 12px;
+  font-family: "Kelvingi Rodrige";
   overflow: auto;
+  background-color: yellow;
   border: solid 3px black;
   border-radius: 5px;
   margin: 25px;
   margin-bottom: 50px;
   padding: 50px; }
 
-#listaGral {
-  color: maroon; }
-
 h3 {
   background-color: yellow;
   border: solid 3px;
   border-radius: 5px;
   padding: 10px;
-  width: fit-content;
   margin-left: 25px;
   font-family: 'Kelvingi Rodrige';
-  font-size: 21px; }
+  font-size: 21px;
+  width: fit-content; }
 
 .mb-3 {
   background-color: yellow;
@@ -100,8 +110,8 @@ h3 {
   color: black; }
 
 .img-fluid {
-  height: 70px;
-  width: 70px; }
+  width: 70px;
+  height: 70px; }
 
 .form-control {
   width: 500px;
@@ -131,8 +141,8 @@ h3 {
 
 .hijoContenedorExplicativo {
   background-color: #f0d60f;
-  font-family: "Kelvingi Rodrige";
   font-size: medium;
+  font-family: "Kelvingi Rodrige";
   max-width: 500px;
   max-height: 500px;
   width: fit-content;
@@ -159,6 +169,15 @@ footer {
   text-align: center;
   position: static; }
 
+@media screen and (max-width: 800px) {
+  header nav {
+    font-size: 10px;
+    width: 70%;
+    height: 40%;
+    margin: 0px;
+    position: fixed;
+    right: 100px; } }
+
 @media screen and (max-width: 360px) and (min-width: 200px) {
   .container-sm {
     font-size: small;
@@ -169,23 +188,10 @@ footer {
   #tituloListadoGeneral {
     font-size: small; } }
 
-@media screen and (max-width: 360px) and (min-width: 200px) {
-  .enlacesPaginas {
-    border: 2px solid;
-    border-radius: 3px;
-    font-size: small;
-    font-family: 'Kelvingi Rodrige';
-    background-color: yellow;
-    display: inline; } }
-
 @media screen and (max-width: 300px) {
   .navbar {
     position: relative;
     right: -5px; } }
-
-@media screen and (max-width: 360px) and (min-width: 200px) {
-  .linkPaginas {
-    display: inline; } }
 
 @media screen and (max-width: 360px) and (min-width: 200px) {
   body {
@@ -523,8 +529,10 @@ footer {
   padding: 5px;
   border: solid 1px yellow;
   width: 100px;
-  margin-left: 600px;
-  justify-content: center; }
+  justify-content: center;
+  position: relative;
+  left: 600px;
+  margin-top: 25px; }
 
 .contenedorPadrePaletasWilson {
   display: grid;
@@ -546,36 +554,44 @@ footer {
   padding: 2px; }
 
 .belaLt {
-  width: 400px;
-  height: 250px; }
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
 
 .bladeProV2 {
-  width: 400px;
-  height: 250px; }
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
 
 .belaElite {
-  width: 400px;
-  height: 250px; }
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
 
 .proStaffElite {
-  width: 400px;
-  height: 250px; }
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
 
 .proStaffTeamPadel {
-  width: 400px;
-  height: 250px; }
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
 
 .proStaffLtV2 {
-  width: 400px;
-  height: 250px; }
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
 
 .proStaffEliteV2 {
-  width: 400px;
-  height: 250px; }
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
 
 .padelCupra {
-  width: 400px;
-  height: 250px; }
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
 
 #paletasHead {
   font-size: medium;
@@ -585,8 +601,49 @@ footer {
   padding: 5px;
   border: solid 1px yellow;
   width: 100px;
-  margin-left: 600px;
-  justify-content: center; }
+  justify-content: center;
+  position: relative;
+  left: 600px; }
+
+.headFlash {
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
+
+.headFlashPro {
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
+
+.headGravity {
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
+
+.headGravityPro {
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
+
+.headGravityMotion {
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
+
+.headZephyr {
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
+
+.headDelta {
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
+
+.headEvoDelta {
+  width: 390px;
+  height: 240px;
+  border-radius: 10px; }
 
 .contenedorPadrePaletasHead {
   display: grid;
@@ -609,14 +666,14 @@ footer {
   #paletasWilson {
     font-size: small;
     position: relative;
-    left: -400px;
+    left: 250px;
     margin-top: 25px; } }
 
 @media screen and (max-width: 1000px) and (min-width: 200px) {
   #paletasHead {
     font-size: small;
     position: relative;
-    left: -400px;
+    left: 250px;
     margin-bottom: 25px; } }
 
 /* INICIO ESTILO ACCESORIOS */

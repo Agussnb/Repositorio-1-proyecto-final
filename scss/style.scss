@@ -1,5 +1,6 @@
 @import 'fonts';
 @import 'displays';
+@import 'mixins';
 
 * {
     margin: 0;
@@ -15,7 +16,17 @@ header{
     padding: 10px;
     background-color: #f0d60f;
 }
-
+header nav{
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a:hover{
+    background-color: #d8ca5a;
+}
 .logo{
     display: $dF;
     align-items: center;
@@ -68,12 +79,13 @@ body {
 
 #tituloListadoGeneral {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-family: $font-family;
 }
 
 .container{
     @include cuadros(200px, 400px);
+    @include textos(12px);
     overflow: auto;
     background-color: yellow;
     border: solid 3px black;
@@ -83,19 +95,15 @@ body {
     padding: 50px;
 }
 
-#listaGral {
-    color: maroon;
-}
-
 h3 {
     background-color: yellow;
     border: solid 3px;
     border-radius: 5px;
     padding: 10px;
-    width: fit-content;
     margin-left: 25px;
     font-family: 'Kelvingi Rodrige';
     font-size: 21px;
+    width: fit-content;
 }
 
 .mb-3 {
@@ -184,6 +192,16 @@ footer {
     text-align: center;
     position: static;
 }
+@media screen and (max-width:800px){
+    header nav{
+        font-size: 10px;
+        width: 70%;
+        height: 40%;
+        margin: 0px;
+        position: fixed;
+        right: 100px;
+    }
+}
 @media screen and (max-width:360px) and (min-width:200px){
     .container-sm{
         font-size:$font-size-sm;
@@ -196,33 +214,12 @@ footer {
         font-size: $font-size-sm;
     }
 }
-@media screen and (max-width:360px) and (min-width:200px){
-    .enlacesPaginas {
-        border: 2px solid;
-        border-radius: 3px;
-        font-size: small;
-        font-family: 'Kelvingi Rodrige';
-        background-color: yellow;
-        display: inline;
-
-    }
-}
 @media screen and (max-width:300px) {
     .navbar{
         position: relative;
         right: -5px;
     }
 }
-
-
-
-
-@media screen and (max-width:360px) and (min-width:200px){
-    .linkPaginas {
-        display: inline;
-    }
-}
-
 @media screen and (max-width:360px) and (min-width:200px){
     body{
         max-width: 100%;
@@ -277,7 +274,6 @@ footer {
     font-size: $font-size-sm;
     padding: 8px;
     max-width: 45%;
-
 }
 }
 
@@ -627,8 +623,10 @@ footer {
     padding: 5px;
     border: solid 1px yellow;
     width: 100px;
-    margin-left: 600px;
     justify-content: center;
+    position: relative;
+    left: 600px;
+    margin-top: 25px;
 }
 
 .contenedorPadrePaletasWilson {
@@ -654,43 +652,51 @@ footer {
 }
 
 .belaLt {
-    width: 400px;
-    height: 250px;
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
 }
 
 .bladeProV2 {
-    width: 400px;
-    height: 250px;
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
 }
 
 .belaElite {
-    width: 400px;
-    height: 250px;
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
 }
 
 .proStaffElite {
-    width: 400px;
-    height: 250px;
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
 }
 
 .proStaffTeamPadel {
-    width: 400px;
-    height: 250px;
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
 }
 
 .proStaffLtV2 {
-    width: 400px;
-    height: 250px;
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
 }
 
 .proStaffEliteV2 {
-    width: 400px;
-    height: 250px;
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
 }
 
 .padelCupra {
-    width: 400px;
-    height: 250px;
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
 }
 
 #paletasHead {
@@ -701,8 +707,50 @@ footer {
     padding: 5px;
     border: solid 1px yellow;
     width: 100px;
-    margin-left: 600px;
     justify-content: center;
+    position: relative;
+    left: 600px;
+}
+
+.headFlash{
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
+}
+.headFlashPro{
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
+}
+.headGravity{
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
+}
+.headGravityPro{
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
+}
+.headGravityMotion{
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
+}
+.headZephyr{
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
+}
+.headDelta{
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
+}
+.headEvoDelta{
+    width: 390px;
+    height: 240px;
+    border-radius: 10px;
 }
 
 .contenedorPadrePaletasHead {
@@ -732,7 +780,7 @@ footer {
     #paletasWilson {
        font-size: $font-size-sm;
        position: relative;
-       left: -400px;
+       left: 250px;
        margin-top: 25px;
     }
 }
@@ -740,7 +788,7 @@ footer {
     #paletasHead {
        font-size: $font-size-sm;
        position: relative;
-       left: -400px;
+       left: 250px;
        margin-bottom: 25px;
     }
 }
@@ -861,22 +909,3 @@ footer {
 
 /* FIN ESTILO ACCESORIOS */
 
-// MIXINS
-@mixin textos($font-size:16px){
-    font-size: $font-size;
-    font-family: $font-family;
-}
-@mixin cuadros($width:300px, $height:300px){
-    width: $width;
-    height: $height;
-}
-@mixin bordes(){
-    border: solid 5px;
-    border-radius: 5px;
-}
-@mixin margenes($margen:25px){
-    margin: $margen;
-}
-@mixin paddings($padding:5px){
-    padding:$padding;
-}
