@@ -447,6 +447,9 @@ visibility:hidden ;
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
     }
+    .divRaqueta{
+        margin-left: 5px;
+    }
 }
 
 @media screen and (max-width:360px) and (min-width:200px){
@@ -484,6 +487,7 @@ visibility:hidden ;
     .contenedorPadreRaquetasHead {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
+      
     }
 }
 
