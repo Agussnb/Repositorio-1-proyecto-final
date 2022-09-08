@@ -255,7 +255,7 @@ footer {
   margin: 0;
   padding: 0; }
 
-#raquetasWilson {
+#raquetasWilson, #raquetasHead {
   text-align: center;
   font-size: medium;
   font-family: "Kelvingi Rodrige";
@@ -327,20 +327,6 @@ footer {
   width: 390px;
   border: 1px; }
 
-#raquetasHead {
-  text-align: center;
-  font-size: medium;
-  font-family: "Kelvingi Rodrige";
-  color: yellow;
-  background-color: black;
-  padding: 5px;
-  border: solid 1px yellow;
-  width: 100px;
-  position: relative;
-  right: -600px;
-  justify-content: center;
-  margin-top: 25px; }
-
 .contenedorPadreRaquetasHead {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -401,7 +387,7 @@ footer {
     width: max-content; } }
 
 @media screen and (max-width: 1000px) and (min-width: 200px) {
-  #raquetasWilson {
+  #raquetasWilson, #raquetasHead {
     font-size: small;
     position: relative;
     left: 250px;
@@ -537,7 +523,7 @@ footer {
   margin: 0;
   padding: 0; }
 
-#paletasWilson {
+#paletasWilson, #paletasHead {
   font-size: medium;
   font-family: "Kelvingi Rodrige";
   color: yellow;
@@ -609,18 +595,6 @@ footer {
   height: 240px;
   border-radius: 10px; }
 
-#paletasHead {
-  font-size: medium;
-  font-family: "Kelvingi Rodrige";
-  color: yellow;
-  background-color: black;
-  padding: 5px;
-  border: solid 1px yellow;
-  width: 100px;
-  justify-content: center;
-  position: relative;
-  left: 600px; }
-
 .headFlash {
   width: 390px;
   height: 240px;
@@ -679,7 +653,7 @@ footer {
     grid-column-gap: 10px; } }
 
 @media screen and (max-width: 1000px) and (min-width: 200px) {
-  #paletasWilson {
+  #paletasWilson, #paletasHead {
     font-size: small;
     position: relative;
     left: 250px;
@@ -690,14 +664,14 @@ footer {
     font-size: small;
     position: relative;
     left: 250px;
-    margin-bottom: 25px; } }
+    margin-top: 25px; } }
 
 /* INICIO ESTILO ACCESORIOS */
 * {
   margin: 0;
   padding: 0; }
 
-#accesoriosWilson {
+#accesoriosWilson, #accesoriosHead {
   text-align: center;
   font-size: medium;
   font-family: "Kelvingi Rodrige";
@@ -727,20 +701,6 @@ footer {
   grid-row-gap: 20px;
   margin-left: 25px; }
 
-#accesoriosHead {
-  text-align: center;
-  font-size: medium;
-  font-family: "Kelvingi Rodrige";
-  color: yellow;
-  background-color: black;
-  padding: 5px;
-  border: solid 1px yellow;
-  width: 120px;
-  position: relative;
-  right: -600px;
-  justify-content: center;
-  margin-top: 15px; }
-
 .contenedorPadreAccesoriosHead {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -769,7 +729,7 @@ footer {
     left: 100px; } }
 
 @media screen and (max-width: 600px) {
-  #accesoriosWilson {
+  #accesoriosWilson, #accesoriosHead {
     position: relative;
     left: 100px; } }
 
@@ -779,7 +739,7 @@ footer {
     left: 300px; } }
 
 @media screen and (max-width: 600px) {
-  #accesoriosWilson {
+  #accesoriosWilson, #accesoriosHead {
     position: relative;
     left: 300px; } }
 
