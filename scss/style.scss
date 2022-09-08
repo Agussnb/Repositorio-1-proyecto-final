@@ -1,6 +1,8 @@
-@import 'fonts';
-@import 'displays';
-@import 'mixins';
+@import  'fonts',
+                 'displays',
+                 'mixins',
+                 'variables';
+
 
 * {
     margin: 0;
@@ -14,7 +16,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #f0d60f;
+    background-color: map-get($colores, "primario");
 }
 header nav{
     width: 90%;
@@ -25,7 +27,10 @@ header nav ul li{
     float: left;
 }
 header nav ul li a:hover{
-    background-color: #d8ca5a;
+    background-color: map-get($colores, "amarillo oscuro");
+}
+.dropdown-item:hover{
+    background-color: map-get($colores, "amarillo oscuro");
 }
 .h1Index{
     display: $dF;
@@ -65,7 +70,7 @@ body {
         border: 2px solid;
         font-family: $font-family;
         font-size: $font-size-md;
-        background-color: yellow;
+        background-color: map-get($colores, "primario");
         padding: 2px;
     }
 
@@ -87,8 +92,8 @@ body {
     @include cuadros(200px, 400px);
     @include textos(12px);
     overflow: auto;
-    background-color: yellow;
-    border: solid 3px black;
+    background-color: map-get($colores, "primario");
+    border: solid 3px map-get($colores, "negro");
     border-radius: 5px;
     margin: 25px;
     margin-bottom: 50px;
@@ -96,7 +101,7 @@ body {
 }
 
 h3 {
-    background-color: yellow;
+    background-color: map-get($colores, "primario");
     border: solid 3px;
     border-radius: 5px;
     padding: 10px;
@@ -107,7 +112,7 @@ h3 {
 }
 
 .mb-3 {
-    background-color: yellow;
+    background-color: map-get($colores, "primario");
     border-radius: 5px;
     border: solid 1px;
     width: 555px;
@@ -124,8 +129,8 @@ h3 {
 
 .btn {
     margin-right: 100px;
-    background-color: white;
-    color: black;
+    background-color: map-get($colores, "blanco");
+    color: map-get($colores, "negro");
 }
 
 .img-fluid {
@@ -143,7 +148,7 @@ h3 {
     font-size: 16px;
 }
 .consultaProducto{
-        background-color: yellow;
+        background-color: map-get($colores, "primario");
         border: solid 3px;
         border-radius: 5px;
         padding: 10px;
@@ -162,7 +167,7 @@ h3 {
 
 }
 .hijoContenedorExplicativo{
-    background-color: #f0d60f;
+    background-color: map-get($colores, "primario");
    @include textos($font-size-md);
     max-width: 500px;
     max-height: 500px;
@@ -176,7 +181,7 @@ h3 {
 
 }
 .h5HijoContenedorExplicativo{
-    background-color: #15b6eb;
+    background-color: map-get($colores, "secundario");
     font-family: $font-family;
     font-size: $font-size-md;
     border-bottom: solid 4px;
@@ -188,7 +193,7 @@ footer {
 
 .divFooter {
     width: 100%;
-    background-color: yellow;
+    background-color: map-get($colores, "primario");
     text-align: center;
     position: static;
 }
@@ -301,10 +306,10 @@ visibility:hidden ;
     text-align: center;
     font-size: $font-size-md;
     font-family: $font-family;
-    color: yellow;                              
-    background-color: black;
+    color: map-get($colores, "secundario");                              
+    background-color: map-get($colores, "negro");
     padding: 5px;
-    border: solid 1px yellow;
+    border: solid 1px map-get($colores, "primario");
     width: 100px;
     position: relative;
     right: -600px;
@@ -322,12 +327,12 @@ visibility:hidden ;
 .divRaqueta {
     width: 400px;
     height: 400px;
-    background-color: black;
-    color: white;
+    background-color: map-get($colores, "negro");
+    color: map-get($colores, "blanco");
     display: $dIB;
     margin-left: 100px;
     margin-bottom: 50px;
-    border: 2px solid rgb(251, 255, 0);
+    border: 2px solid map-get($colores, "primario");
     border-radius: 5px;
     padding: 2px;
 }
@@ -493,8 +498,8 @@ visibility:hidden ;
     font-size: 16px;
     overflow-y: scroll;
     font-family: $font-family;
-    background-color: yellow;
-    border: solid 3px black;
+    background-color: map-get($colores, "primario");
+    border: solid 3px map-get($colores, "negro");
     margin: 25px;
     border-radius: 8px;
     animation-name: color;
@@ -503,16 +508,16 @@ visibility:hidden ;
 
 @keyframes color {
     from {
-        background-color: yellow;
+        background-color: map-get($colores, "primario");
     }
 
     to {
-        background-color: aqua;
+        background-color: map-get($colores, "secundario");
     }
 }
 
 .h2InformativoNosotros {
-    background-color: yellow;
+    background-color: map-get($colores, "primario");
     font-family: 'Kelvingi Rodrige';
     font-size: 18px;
     border: solid 2px;
@@ -525,11 +530,11 @@ visibility:hidden ;
 
 @keyframes color {
     from {
-        background-color: yellow;
+        background-color: map-get($colores, "primario");
     }
 
     to {
-        background-color: aqua;
+        background-color: map-get($colores, "secundario");
     }
 }
 .padreSectionInformativo{
@@ -553,7 +558,7 @@ visibility:hidden ;
     top: -335px;
 }
 #cardSectionInformativo{
-    background-color: yellow;
+    background-color: map-get($colores, "primario");
     border-radius: 5px;
     padding: 10px;
     margin-left: 25px;
@@ -625,10 +630,10 @@ visibility:hidden ;
 #paletasWilson {
     font-size: $font-size-md;
     font-family: $font-family;
-    color: yellow;
-    background-color: black;
+    color: map-get($colores, "primario");
+    background-color: map-get($colores, "negro");
     padding: 5px;
-    border: solid 1px yellow;
+    border: solid 1px map-get($colores, "primario");
     width: 100px;
     justify-content: center;
     position: relative;
@@ -647,12 +652,12 @@ visibility:hidden ;
 .divPaleta {
     width: 400px;
     height: 250px;
-    background-color: black;
-    color: white;
+    background-color: map-get($colores, "negro");
+    color: map-get($colores, "blanco");
     display: $dIB;
     margin-left: 100px;
     margin-bottom: 50px;
-    border: 2px solid rgb(251, 255, 0);
+    border: 2px solid map-get($colores, "primario");
     border-radius: 5px;
     padding: 2px;
 }
@@ -799,10 +804,10 @@ visibility:hidden ;
     text-align: center;
     font-size: $font-size-md;
     font-family: $font-family;
-    color: yellow;
-    background-color: black;
+    color: map-get($colores, "primario");
+    background-color: map-get($colores, "negro");
     padding: 5px;
-    border: solid 1px yellow;
+    border: solid 1px map-get($colores, "primario");
     width: 120px;
     position: relative;
     left: 600px;
@@ -813,9 +818,9 @@ visibility:hidden ;
 .divAccesorios {
     width: 300px;
     height: 300px;
-    background-color: rgb(255, 255, 255);
-    color: white;
-    border: 2px solid rgb(251, 255, 0);
+    background-color: map-get($colores, "blanco");
+    color: map-get($colores, "blanco");
+    border: 2px solid map-get($colores, "primario");
     border-radius: 5px;
 
 }

@@ -17,3 +17,23 @@
 @mixin paddings($padding:5px){
     padding:$padding;
 }
+//MAPS
+//VARIABLES DE LOS MAPAS
+$primario: #FFFF00;
+$secundario: #00FFFF;
+//--------------------------------
+$colores: (
+    "primario": $primario,
+    "secundario": $secundario,
+    "rojo": #FF0000,
+    "azul": #0033FF,
+    "verde": #00FF40,
+    "violeta":#9900FF,
+    "rosa":#FF00B7,
+    "blanco":#FFF,
+    "negro":#000000,
+    "naranja":#FF7B00,
+    "gris":#737373,
+    "amarillo oscuro":rgb(213, 206, 9)
+);
+

@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #f0d60f; }
+  background-color: #FFFF00; }
 
 header nav {
   width: 90%;
@@ -20,7 +20,10 @@ header nav ul li {
   float: left; }
 
 header nav ul li a:hover {
-  background-color: #d8ca5a; }
+  background-color: #d5ce09; }
+
+.dropdown-item:hover {
+  background-color: #d5ce09; }
 
 .h1Index {
   display: flex;
@@ -54,7 +57,7 @@ nav {
   border: 2px solid;
   font-family: "Kelvingi Rodrige";
   font-size: medium;
-  background-color: yellow;
+  background-color: #FFFF00;
   padding: 2px; }
 
 #contenedorPadreIndex {
@@ -74,15 +77,15 @@ nav {
   font-size: 12px;
   font-family: "Kelvingi Rodrige";
   overflow: auto;
-  background-color: yellow;
-  border: solid 3px black;
+  background-color: #FFFF00;
+  border: solid 3px #000000;
   border-radius: 5px;
   margin: 25px;
   margin-bottom: 50px;
   padding: 50px; }
 
 h3 {
-  background-color: yellow;
+  background-color: #FFFF00;
   border: solid 3px;
   border-radius: 5px;
   padding: 10px;
@@ -92,7 +95,7 @@ h3 {
   width: fit-content; }
 
 .mb-3 {
-  background-color: yellow;
+  background-color: #FFFF00;
   border-radius: 5px;
   border: solid 1px;
   width: 555px;
@@ -106,8 +109,8 @@ h3 {
 
 .btn {
   margin-right: 100px;
-  background-color: white;
-  color: black; }
+  background-color: #FFF;
+  color: #000000; }
 
 .img-fluid {
   width: 75px;
@@ -124,7 +127,7 @@ h3 {
   font-size: 16px; }
 
 .consultaProducto {
-  background-color: yellow;
+  background-color: #FFFF00;
   border: solid 3px;
   border-radius: 5px;
   padding: 10px;
@@ -141,7 +144,7 @@ h3 {
   height: fit-content; }
 
 .hijoContenedorExplicativo {
-  background-color: #f0d60f;
+  background-color: #FFFF00;
   font-size: medium;
   font-family: "Kelvingi Rodrige";
   max-width: 500px;
@@ -156,7 +159,7 @@ h3 {
   border: solid 4px; }
 
 .h5HijoContenedorExplicativo {
-  background-color: #15b6eb;
+  background-color: #00FFFF;
   font-family: "Kelvingi Rodrige";
   font-size: medium;
   border-bottom: solid 4px; }
@@ -166,7 +169,7 @@ footer {
 
 .divFooter {
   width: 100%;
-  background-color: yellow;
+  background-color: #FFFF00;
   text-align: center;
   position: static; }
 
@@ -259,10 +262,10 @@ footer {
   text-align: center;
   font-size: medium;
   font-family: "Kelvingi Rodrige";
-  color: yellow;
-  background-color: black;
+  color: #00FFFF;
+  background-color: #000000;
   padding: 5px;
-  border: solid 1px yellow;
+  border: solid 1px #FFFF00;
   width: 100px;
   position: relative;
   right: -600px;
@@ -278,12 +281,12 @@ footer {
 .divRaqueta {
   width: 400px;
   height: 400px;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #FFF;
   display: inline-block;
   margin-left: 100px;
   margin-bottom: 50px;
-  border: 2px solid #fbff00;
+  border: 2px solid #FFFF00;
   border-radius: 5px;
   padding: 2px; }
 
@@ -421,8 +424,8 @@ footer {
   font-size: 16px;
   overflow-y: scroll;
   font-family: "Kelvingi Rodrige";
-  background-color: yellow;
-  border: solid 3px black;
+  background-color: #FFFF00;
+  border: solid 3px #000000;
   margin: 25px;
   border-radius: 8px;
   animation-name: color;
@@ -430,12 +433,12 @@ footer {
 
 @keyframes color {
   from {
-    background-color: yellow; }
+    background-color: #FFFF00; }
   to {
-    background-color: aqua; } }
+    background-color: #00FFFF; } }
 
 .h2InformativoNosotros {
-  background-color: yellow;
+  background-color: #FFFF00;
   font-family: 'Kelvingi Rodrige';
   font-size: 18px;
   border: solid 2px;
@@ -447,9 +450,9 @@ footer {
 
 @keyframes color {
   from {
-    background-color: yellow; }
+    background-color: #FFFF00; }
   to {
-    background-color: aqua; } }
+    background-color: #00FFFF; } }
 
 .padreSectionInformativo {
   display: flex;
@@ -470,7 +473,7 @@ footer {
   top: -335px; }
 
 #cardSectionInformativo {
-  background-color: yellow;
+  background-color: #FFFF00;
   border-radius: 5px;
   padding: 10px;
   margin-left: 25px;
@@ -526,10 +529,10 @@ footer {
 #paletasWilson, #paletasHead {
   font-size: medium;
   font-family: "Kelvingi Rodrige";
-  color: yellow;
-  background-color: black;
+  color: #FFFF00;
+  background-color: #000000;
   padding: 5px;
-  border: solid 1px yellow;
+  border: solid 1px #FFFF00;
   width: 100px;
   justify-content: center;
   position: relative;
@@ -546,12 +549,12 @@ footer {
 .divPaleta {
   width: 400px;
   height: 250px;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #FFF;
   display: inline-block;
   margin-left: 100px;
   margin-bottom: 50px;
-  border: 2px solid #fbff00;
+  border: 2px solid #FFFF00;
   border-radius: 5px;
   padding: 2px; }
 
@@ -675,10 +678,10 @@ footer {
   text-align: center;
   font-size: medium;
   font-family: "Kelvingi Rodrige";
-  color: yellow;
-  background-color: black;
+  color: #FFFF00;
+  background-color: #000000;
   padding: 5px;
-  border: solid 1px yellow;
+  border: solid 1px #FFFF00;
   width: 120px;
   position: relative;
   left: 600px;
@@ -688,9 +691,9 @@ footer {
 .divAccesorios {
   width: 300px;
   height: 300px;
-  background-color: white;
-  color: white;
-  border: 2px solid #fbff00;
+  background-color: #FFF;
+  color: #FFF;
+  border: 2px solid #FFFF00;
   border-radius: 5px; }
 
 .contenedorPadreAccesoriosWilson {
