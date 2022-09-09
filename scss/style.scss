@@ -1,7 +1,8 @@
 @import  'fonts',
                  'displays',
                  'mixins',
-                 'variables';
+                 'variables',
+                 'clases-predeterminadas-extend';
 
 
 * {
@@ -43,13 +44,12 @@ header nav ul li a:hover{
 }
 
 h1 {
+    @extend .fuentes;
     font-size: $font-size-xxl;
-    font-family: $font-family;
     color: rgb(38, 38, 38);
     padding: 10px;
     text-align: center;
     width: 100%;
-
 }
 
 body {
@@ -95,7 +95,7 @@ body {
     background-color: map-get($colores, "primario");
     border: solid 3px map-get($colores, "negro");
     border-radius: 5px;
-    margin: 25px;
+   @extend .margenCinco;
     margin-bottom: 50px;
     padding: 50px;
 }
@@ -116,13 +116,13 @@ h3 {
     border-radius: 5px;
     border: solid 1px;
     width: 555px;
-    margin-left: 25px;
+    @extend .margenUno;
     
 }
 
 .mb-2 {
     width: 555px;
-    margin-left: 25px;
+    @extend .margenUno;
     display: flex;
     justify-content: center;
 }
@@ -135,16 +135,16 @@ h3 {
 
 .img-fluid {
    @include cuadros(75px, 75px);
-   margin: 25px;
+   @extend .margenCinco;
 }
 .form-control {
     width: 500px;
-    margin-left: 25px;
+    @extend .margenUno;
 }
 
 .form-label {
     font-family: $font-family;
-    margin-left: 25px;
+    @extend .margenUno;
     font-size: 16px;
 }
 .consultaProducto{
@@ -153,7 +153,7 @@ h3 {
         border-radius: 5px;
         padding: 10px;
         width: fit-content;
-        margin-left: 25px;
+        @extend .margenUno;
         font-family: 'Kelvingi Rodrige';
         font-size: 21px;
 }
@@ -182,8 +182,7 @@ h3 {
 }
 .h5HijoContenedorExplicativo{
     background-color: map-get($colores, "secundario");
-    font-family: $font-family;
-    font-size: $font-size-md;
+    @extend .fuentes;
     border-bottom: solid 4px;
 }
 

@@ -1,3 +1,38 @@
+.fuentes, h1, .h5HijoContenedorExplicativo {
+  font-size: medium;
+  font-family: "Kelvingi Rodrige"; }
+
+.positionUno {
+  position: relative;
+  left: 600px; }
+
+.positionDos {
+  position: relative;
+  right: 600px; }
+
+.positionTres {
+  position: relative;
+  top: 500px; }
+
+.positionCuatro {
+  position: relative;
+  bottom: 500px; }
+
+.margenUno, .mb-3, .mb-2, .form-control, .form-label, .consultaProducto {
+  margin-left: 25px; }
+
+.margenDos {
+  margin-right: 25px; }
+
+.margenTres {
+  margin-top: 25px; }
+
+.margenCuatro {
+  margin-bottom: 25px; }
+
+.margenCinco, .container, .img-fluid {
+  margin: 25px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -35,7 +70,6 @@ header nav ul li a:hover {
 
 h1 {
   font-size: xx-large;
-  font-family: "Kelvingi Rodrige";
   color: #262626;
   padding: 10px;
   text-align: center;
@@ -80,7 +114,6 @@ nav {
   background-color: #FFFF00;
   border: solid 3px #000000;
   border-radius: 5px;
-  margin: 25px;
   margin-bottom: 50px;
   padding: 50px; }
 
@@ -98,12 +131,10 @@ h3 {
   background-color: #FFFF00;
   border-radius: 5px;
   border: solid 1px;
-  width: 555px;
-  margin-left: 25px; }
+  width: 555px; }
 
 .mb-2 {
   width: 555px;
-  margin-left: 25px;
   display: flex;
   justify-content: center; }
 
@@ -114,16 +145,13 @@ h3 {
 
 .img-fluid {
   width: 75px;
-  height: 75px;
-  margin: 25px; }
+  height: 75px; }
 
 .form-control {
-  width: 500px;
-  margin-left: 25px; }
+  width: 500px; }
 
 .form-label {
   font-family: "Kelvingi Rodrige";
-  margin-left: 25px;
   font-size: 16px; }
 
 .consultaProducto {
@@ -132,7 +160,6 @@ h3 {
   border-radius: 5px;
   padding: 10px;
   width: fit-content;
-  margin-left: 25px;
   font-family: 'Kelvingi Rodrige';
   font-size: 21px; }
 
@@ -160,8 +187,6 @@ h3 {
 
 .h5HijoContenedorExplicativo {
   background-color: #00FFFF;
-  font-family: "Kelvingi Rodrige";
-  font-size: medium;
   border-bottom: solid 4px; }
 
 footer {

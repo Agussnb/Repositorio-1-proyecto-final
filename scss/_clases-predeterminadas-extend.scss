@@ -1,0 +1,35 @@
+.fuentes{
+    font-size: $font-size-md;
+    font-family: $font-family;
+}
+.positionUno{
+    position: relative;
+    left: 600px;
+}
+.positionDos{
+    position: relative;
+    right: 600px;
+}
+.positionTres{
+    position: relative;
+    top: 500px;
+}
+.positionCuatro{
+    position: relative;
+    bottom: 500px;
+}
+.margenUno{
+    margin-left: 25px;
+}  
+.margenDos{
+margin-right: 25px;
+}
+.margenTres{
+    margin-top: 25px;
+}
+.margenCuatro{
+    margin-bottom: 25px;
+}
+.margenCinco{
+    margin: 25px;
+}
