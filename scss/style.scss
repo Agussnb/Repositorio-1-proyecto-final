@@ -33,9 +33,10 @@ header nav ul li a:hover{
 .dropdown-item:hover{
     background-color: map-get($colores, "amarillo oscuro");
 }
-.h1Index{
+.h1TituloPaginas{
     display: $dF;
     align-items: center;
+    position: relative;
 }
 
 .logo img{
@@ -60,7 +61,7 @@ body {
     background-attachment: fixed;
     width: 100%;
     max-width: 100%;
-    
+    margin-right: 0%;
 }
 
 #contenedorEnlaces {
@@ -196,19 +197,54 @@ footer {
     text-align: center;
     position: static;
 }
-@media screen and (max-width:800px){
-    header nav{
-        font-size: 10px;
-        width: 70%;
-        height: 100%;
-        margin: 0px;
-        position: fixed;
-        right: 100px;
+
+@if width == 1000px{
+    @media screen and (max-width:1000px){
+        header nav{
+            font-size: 12px;
+            width: 60%;
+            height: 50%;
+            margin: 0px;
+            position: relative;
+            left: 5px;
+        }
     }
 }
-@media screen and (max-width:800px){
-.h1Index{
-visibility:hidden ;
+@else {
+    @media screen and (max-width:800px){
+        header nav{
+            font-size: 18px;
+            width: 80%;
+            height: 80%;
+            position:relative;
+            right: 240px;
+        }
+        .nav-link{
+           position: relative;
+           right: 50px;
+        }
+        .h1TituloPaginas{
+            visibility: hidden;
+        }
+    }
+}
+
+@media screen and (max-width:560px){
+    .navbar-expand-sm{
+        position:relative;
+        right: 220px;
+    }
+    .nav-link{
+        font-size: 20px;
+        left: 20px;
+    }
+}
+@media screen and (max-width:560px){
+.h1TituloPaginas{
+visibility: visible ;
+position: relative;
+left: 90px;
+font-size: 22px;
 }
 }
 @media screen and (max-width:360px) and (min-width:200px){
@@ -499,7 +535,9 @@ visibility:hidden ;
     font-family: $font-family;
     background-color: map-get($colores, "primario");
     border: solid 3px map-get($colores, "negro");
-    margin: 25px;
+    position: relative;
+    left: 20px;
+    top: 25px;
     border-radius: 8px;
     animation-name: color;
     animation-duration: 5s;
@@ -521,8 +559,9 @@ visibility:hidden ;
     font-size: 18px;
     border: solid 2px;
     width: 165px;
-    margin-top: 25px;
-    margin-left: 25px;
+    position: relative;
+    left: 20px;
+    top: 25px;
     animation-name: color;
     animation-duration: 5s;
 }
@@ -540,7 +579,8 @@ visibility:hidden ;
     display: $dF;
     justify-content: space-evenly;
     align-items: center;
-    margin-right: 50px;
+    position: relative;
+    left: 50px;
     
     
 }
@@ -554,7 +594,7 @@ visibility:hidden ;
     height: 750px;
     border-radius: 10px;
     position: relative;
-    top: -335px;
+    bottom: 270px ;
 }
 #cardSectionInformativo{
     background-color: map-get($colores, "primario");

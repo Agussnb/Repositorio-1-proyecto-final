@@ -60,9 +60,10 @@ header nav ul li a:hover {
 .dropdown-item:hover {
   background-color: #d5ce09; }
 
-.h1Index {
+.h1TituloPaginas {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .logo img {
   height: 50px;
@@ -82,7 +83,8 @@ body {
   background-position: center center;
   background-attachment: fixed;
   width: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  margin-right: 0%; }
 
 #contenedorEnlaces {
   display: flex; }
@@ -200,16 +202,31 @@ footer {
 
 @media screen and (max-width: 800px) {
   header nav {
-    font-size: 10px;
-    width: 70%;
-    height: 100%;
-    margin: 0px;
-    position: fixed;
-    right: 100px; } }
-
-@media screen and (max-width: 800px) {
-  .h1Index {
+    font-size: 18px;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    right: 240px; }
+  .nav-link {
+    position: relative;
+    right: 50px; }
+  .h1TituloPaginas {
     visibility: hidden; } }
+
+@media screen and (max-width: 560px) {
+  .navbar-expand-sm {
+    position: relative;
+    right: 220px; }
+  .nav-link {
+    font-size: 20px;
+    left: 20px; } }
+
+@media screen and (max-width: 560px) {
+  .h1TituloPaginas {
+    visibility: visible;
+    position: relative;
+    left: 90px;
+    font-size: 22px; } }
 
 @media screen and (max-width: 360px) and (min-width: 200px) {
   .container-sm {
@@ -451,7 +468,9 @@ footer {
   font-family: "Kelvingi Rodrige";
   background-color: #FFFF00;
   border: solid 3px #000000;
-  margin: 25px;
+  position: relative;
+  left: 20px;
+  top: 25px;
   border-radius: 8px;
   animation-name: color;
   animation-duration: 5s; }
@@ -468,8 +487,9 @@ footer {
   font-size: 18px;
   border: solid 2px;
   width: 165px;
-  margin-top: 25px;
-  margin-left: 25px;
+  position: relative;
+  left: 20px;
+  top: 25px;
   animation-name: color;
   animation-duration: 5s; }
 
@@ -483,7 +503,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-right: 50px; }
+  position: relative;
+  left: 50px; }
 
 .hijoSectionInformativo {
   background-color: #3BBDB6;
@@ -495,7 +516,7 @@ footer {
   height: 750px;
   border-radius: 10px;
   position: relative;
-  top: -335px; }
+  bottom: 270px; }
 
 #cardSectionInformativo {
   background-color: #FFFF00;
