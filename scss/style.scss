@@ -14,18 +14,15 @@ header{
     display: $dF;
     min-height: 70px;
     width: 100%;
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: map-get($colores, "primario");
 }
+
 header nav{
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: 10px auto;
-}
-header nav ul li{
-    float: left;
 }
 header nav ul li a:hover{
     background-color: map-get($colores, "amarillo oscuro");
@@ -33,6 +30,7 @@ header nav ul li a:hover{
 .dropdown-item:hover{
     background-color: map-get($colores, "amarillo oscuro");
 }
+
 .h1TituloPaginas{
     display: $dF;
     align-items: center;
@@ -63,18 +61,14 @@ body {
     max-width: 100%;
     margin-right: 0%;
 }
-
-#contenedorEnlaces {
-    display: $dF;
-}
     nav {
         border: 2px solid;
         font-family: $font-family;
         font-size: $font-size-md;
         background-color: map-get($colores, "primario");
-        padding: 2px;
+        position: absolute;
+   
     }
-
 #contenedorPadreIndex {
     display: $dF;
 }
@@ -217,7 +211,7 @@ footer {
             width: 80%;
             height: 80%;
             position:relative;
-            right: 240px;
+            right: 300px;
         }
         .nav-link{
            position: relative;
@@ -229,10 +223,22 @@ footer {
     }
 }
 
+@media screen and (max-width:800px){
+    .h1TituloPaginas{
+        visibility: hidden;
+    }
+    .logoPelota{
+        visibility: hidden;
+    }
+}
+
 @media screen and (max-width:560px){
     .navbar-expand-sm{
-        position:relative;
-        right: 220px;
+        position: relative;
+        right: 300px;
+    }
+    .logoPelota{
+        visibility: hidden;
     }
     .nav-link{
         font-size: 20px;
@@ -241,7 +247,7 @@ footer {
 }
 @media screen and (max-width:560px){
 .h1TituloPaginas{
-visibility: visible ;
+visibility: hidden ;
 position: relative;
 left: 90px;
 font-size: 22px;
@@ -347,8 +353,9 @@ font-size: 22px;
     border: solid 1px map-get($colores, "primario");
     width: 100px;
     position: relative;
-    right: -600px;
+    left: 600px;
     justify-content: center;
+    justify-self: right;
     margin-top: 25px;
 }
 
@@ -370,12 +377,17 @@ font-size: 22px;
     border: 2px solid map-get($colores, "primario");
     border-radius: 5px;
     padding: 2px;
+    overflow: hidden;
 }
 
 .proOpen {
     height: 390px;
     width: 390px;
     border: 1px;
+    animation: zoom 3s;
+}
+.divRaqueta:hover .proOpen{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
 }
 
 .blade98V8Rg {
@@ -383,42 +395,57 @@ font-size: 22px;
     width: 390px;
     border: 1px;
 }
-
+.divRaqueta:hover .blade98V8Rg{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .blade98V8 {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-
+.divRaqueta:hover .blade98V8{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .clash100ProV2 {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-
+.divRaqueta:hover .clash100ProV2{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .clash100Pro {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-
+.divRaqueta:hover .clash100Pro{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .clash100Silver {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-
+.divRaqueta:hover .clash100Silver{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .rolandGarrosTeam102 {
     height: 390px;
     width: 390px;
     border: 1px;
+}
+.divRaqueta:hover .rolandGarrosTeam102{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
 }
 .proStaff97{
     height: 390px;
     width: 390px;
     border: 1px;
 }
-
+.divRaqueta:hover .proStaff97{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 
 #raquetasHead {
 @extend #raquetasWilson
@@ -436,41 +463,68 @@ font-size: 22px;
     width: 390px;
     border: 1px;
 }
+.divRaqueta:hover .attitudeElite{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .attitudePro{
     height: 390px;
     width: 390px;
     border: 1px;
+}
+.divRaqueta:hover .attitudePro{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
 }
 .extremePro{
     height: 390px;
     width: 390px;
     border: 1px;
 }
+.divRaqueta:hover .extremePro{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .extremeTour{
     height: 390px;
     width: 390px;
     border: 1px;
+}
+.divRaqueta:hover .extremeTour{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
 }
 .challengeMp{
     height: 390px;
     width: 390px;
     border: 1px;
 }
+.divRaqueta:hover .challengeMp{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .gravityTour{
     height: 390px;
     width: 390px;
     border: 1px;
+}
+.divRaqueta:hover .gravityTour{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
 }
 .prestigePro{
     height: 390px;
     width: 390px;
     border: 1px;
 }
+.divRaqueta:hover .prestigePro{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .radicalPro{
     height: 390px;
     width: 390px;
     border: 1px;
 }
+.divRaqueta:hover .radicalPro{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+
+
 @media screen and (max-width:1000px) and (min-width:200px){
     .contenedorPadreRaquetasWilson {
         grid-template-columns: 1fr;
@@ -538,6 +592,7 @@ font-size: 22px;
     position: relative;
     left: 20px;
     top: 25px;
+    margin-bottom: 5px;
     border-radius: 8px;
     animation-name: color;
     animation-duration: 5s;
@@ -558,6 +613,8 @@ font-size: 22px;
     font-family: 'Kelvingi Rodrige';
     font-size: 18px;
     border: solid 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     width: 165px;
     position: relative;
     left: 20px;
@@ -595,12 +652,13 @@ font-size: 22px;
     border-radius: 10px;
     position: relative;
     bottom: 270px ;
+    right: 25px;
 }
 #cardSectionInformativo{
     background-color: map-get($colores, "primario");
     border-radius: 5px;
     padding: 10px;
-    margin-left: 25px;
+    position: relative;
     max-width: 500px;
     max-height: 700px;
     width: fit-content;
@@ -656,10 +714,6 @@ font-size: 22px;
             }
         }
 
-
-
-
-
 /* INICIO Estilo del html PALETAS */
 * {
     margin: 0;
@@ -667,16 +721,17 @@ font-size: 22px;
 }
 
 #paletasWilson {
+    text-align: center;
     font-size: $font-size-md;
     font-family: $font-family;
-    color: map-get($colores, "primario");
+    color: map-get($colores, "secundario");                              
     background-color: map-get($colores, "negro");
     padding: 5px;
     border: solid 1px map-get($colores, "primario");
     width: 100px;
-    justify-content: center;
     position: relative;
-    left: 600px;
+    right: -600px;
+    justify-content: center;
     margin-top: 25px;
 }
 
@@ -699,6 +754,7 @@ font-size: 22px;
     border: 2px solid map-get($colores, "primario");
     border-radius: 5px;
     padding: 2px;
+    overflow: hidden;
 }
 
 .belaLt {
@@ -706,49 +762,66 @@ font-size: 22px;
     height: 240px;
     border-radius: 10px;
 }
+.divPaleta:hover .belaLt{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 
 .bladeProV2 {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-
+.divPaleta:hover .bladeProV2{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .belaElite {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-
+.divPaleta:hover .belaElite{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .proStaffElite {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-
+.divPaleta:hover .proStaffElite{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .proStaffTeamPadel {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-
+.divPaleta:hover .proStaffTeamPadel {
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .proStaffLtV2 {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-
+.divPaleta:hover .proStaffLtV2{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .proStaffEliteV2 {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-
+.divPaleta:hover .proStaffEliteV2{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .padelCupra {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-
+.divPaleta:hover .padelCupra{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 #paletasHead {
     @extend #paletasWilson
 }
@@ -758,40 +831,64 @@ font-size: 22px;
     height: 240px;
     border-radius: 10px;
 }
+.divPaleta:hover .headFlash{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .headFlashPro{
     width: 390px;
     height: 240px;
     border-radius: 10px;
+}
+.divPaleta:hover .headFlashPro{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
 }
 .headGravity{
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
+.divPaleta:hover .headGravity{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .headGravityPro{
     width: 390px;
     height: 240px;
     border-radius: 10px;
+}
+.divPaleta:hover .headGravityPro{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
 }
 .headGravityMotion{
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
+.divPaleta:hover .headGravityMotion{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .headZephyr{
     width: 390px;
     height: 240px;
     border-radius: 10px;
+}
+.divPaleta:hover .headZephyr{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
 }
 .headDelta{
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
+.divPaleta:hover .headDelta{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .headEvoDelta{
     width: 390px;
     height: 240px;
     border-radius: 10px;
+}
+.divPaleta:hover .headEvoDelta{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
 }
 
 .contenedorPadrePaletasHead {
@@ -863,7 +960,9 @@ font-size: 22px;
     border-radius: 5px;
 
 }
-
+.divAccesorios:hover {
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+}
 .contenedorPadreAccesoriosWilson {
     display: $dG;
     grid-template-columns: 1fr 1fr 1fr;
