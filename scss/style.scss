@@ -21,7 +21,7 @@ header{
 
 header nav{
     width: 100%;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 10px auto;
 }
 header nav ul li a:hover{
@@ -61,7 +61,7 @@ body {
     max-width: 100%;
     margin-right: 0%;
 }
-    nav {
+nav {
         border: 2px solid;
         font-family: $font-family;
         font-size: $font-size-md;
@@ -69,6 +69,9 @@ body {
         position: absolute;
    
     }
+.navbar-expand-sm{
+    max-width: 100%;
+}
 #contenedorPadreIndex {
     display: $dF;
 }
@@ -87,12 +90,18 @@ body {
     @include cuadros(200px, 400px);
     @include textos(12px);
     overflow: auto;
+    max-width: 100%;
     background-color: map-get($colores, "primario");
     border: solid 3px map-get($colores, "negro");
     border-radius: 5px;
    @extend .margenCinco;
     margin-bottom: 50px;
     padding: 50px;
+}
+
+.container-fluid{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h3 {
@@ -154,12 +163,9 @@ h3 {
 }
 .contenedorExplicativo{
     display: $dF;
-    max-width: 1000px;
-    max-height: 1000px;
+    max-width: 100%;
+    max-height: 100%;
    @include cuadros(fit-content, fit-content);
-
-    
-
 }
 .hijoContenedorExplicativo{
     background-color: map-get($colores, "primario");
@@ -192,38 +198,37 @@ footer {
     position: static;
 }
 
-@if width == 1000px{
-    @media screen and (max-width:1000px){
-        header nav{
-            font-size: 12px;
-            width: 60%;
-            height: 50%;
-            margin: 0px;
-            position: relative;
-            left: 5px;
-        }
+@media screen and (max-width:1060px){
+    .h1TituloPaginas{
+        font-size: 14px;
     }
 }
-@else {
-    @media screen and (max-width:800px){
-        header nav{
-            font-size: 18px;
-            width: 80%;
-            height: 80%;
-            position:relative;
-            right: 300px;
-        }
-        .nav-link{
-           position: relative;
-           right: 50px;
-        }
-        .h1TituloPaginas{
-            visibility: hidden;
-        }
+@media screen and (max-width:940px){
+    .h1TituloPaginas{
+        visibility: hidden;
+    }
+    .navbar-expand-sm{
+        position: relative;
+        right: 100px;
     }
 }
+@media screen and (max-width:840px){
+    .navbar-expand-sm{
+        width: 80%;
+    }
 
+}
 @media screen and (max-width:800px){
+    .navbar-expand-sm{
+        width: 100%;
+        font-size: 100%;
+        right: 230px;
+    }
+    .nav-link{
+        position: relative;
+        left: 35px;
+        text-align: center;
+    }
     .h1TituloPaginas{
         visibility: hidden;
     }
@@ -232,10 +237,30 @@ footer {
     }
 }
 
+@media screen and (max-width:580px) {
+    .mb-3{
+        max-width: 50% ;
+    }
+    .mb-2{
+        max-width: 50% ;
+    }
+    .form-label{
+        max-width: 50% ;
+    }
+    .form-control{
+        max-width: 50%;
+        margin: 0;
+    }
+    .consultaProducto{
+        font-size: $font-size-sm;
+        padding: 8px;
+        max-width: 45%;
+    }
+}
 @media screen and (max-width:560px){
     .navbar-expand-sm{
         position: relative;
-        right: 300px;
+        right: 250px;
     }
     .logoPelota{
         visibility: hidden;
@@ -244,89 +269,79 @@ footer {
         font-size: 20px;
         left: 20px;
     }
+    .h1TituloPaginas{
+        visibility: visible ;
+        position: relative;
+        left: 20px;
+        font-size: 22px;
+   }
 }
-@media screen and (max-width:560px){
-.h1TituloPaginas{
-visibility: hidden ;
-position: relative;
-left: 90px;
-font-size: 22px;
+@media screen and (max-width:540px){
+    .h1TituloPaginas{
+      position: relative;
+      left: 150px;
+    }
 }
+@media screen and (max-width:414px){
+    .h1TituloPaginas{
+        position: relative;
+        left: 25px;
+    }
 }
-@media screen and (max-width:360px) and (min-width:200px){
+@media screen and (max-width:412px){
+    .navbar-expand-sm{
+        right: 290px;
+    }
+    .h1TituloPaginas{
+        position: relative;
+        left: 20px;
+    }
+    
+}
+@media screen and (max-width:360px) {
     .container-sm{
         font-size:$font-size-sm;
         width:100%;
         height: 100%;
     }
-}
-@media screen and (max-width:360px) and (min-width:200px){
     #tituloListadoGeneral{
         font-size: $font-size-sm;
     }
-}
-@media screen and (max-width:300px) {
-    .navbar{
-        position: relative;
-        right: -5px;
-    }
-}
-@media screen and (max-width:360px) and (min-width:200px){
     body{
         max-width: 100%;
     }
-}
-@media screen and (max-width:360px) and (min-width:200px){
     .mb-3{
         max-width: 180px ;
     }
-}
-@media screen and (max-width:360px) and (min-width:200px){
     .mb-2{
         max-width: 180px ;
     }
-}
-@media screen and (max-width:360px) and (min-width:200px){
     .form-label{
         max-width: 180px ;
  
     }
-}
-@media screen and (max-width:360px) and (min-width:200px){
     .form-control{
         max-width: 180px;
         margin: 0;
     }
+    .navbar-expand-sm{
+        width: 100%;
+        right: 240px;
+    }
+    .nav-link{
+        font-size: 14px;
+        left: auto;
+    }
+    .navbar-brand{
+        font-size: 18px;
+    }
+    .h1TituloPaginas{
+        visibility: hidden;
+        position: relative;
+        right: 204px;
+    }
 }
 
-@media screen and (max-width:580px) {
-    .mb-3{
-        max-width: 50% ;
-    }
-}
-@media screen and (max-width:580px) {
-    .mb-2{
-        max-width: 50% ;
-    }
-}
-@media screen and (max-width:580px) {
-    .form-label{
-        max-width: 50% ;
-    }
-}
-@media screen and (max-width:580px) {
-    .form-control{
-        max-width: 50%;
-        margin: 0;
-    }
-}
-@media screen and (max-width:580px) {
-.consultaProducto{
-    font-size: $font-size-sm;
-    padding: 8px;
-    max-width: 45%;
-}
-}
 @media screen and (max-width:1100px){
   .hijoContenedorExplicativo{
     width: 50%;
@@ -525,7 +540,7 @@ font-size: 22px;
 
 
 
-@media screen and (max-width:1000px) and (min-width:200px){
+@media screen and (max-width:1000px){
     .contenedorPadreRaquetasWilson {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
@@ -533,46 +548,57 @@ font-size: 22px;
     .divRaqueta{
         margin-left: px;
     }
-}
-
-@media screen and (max-width:360px) and (min-width:200px){
-    h1 {
-        font-size: $font-size-sm;
-        width: max-content;
-    }
-}
-
-@media screen and (max-width:1000px) and (min-width:200px){
     #raquetasWilson {
-       font-size: $font-size-sm;
-       position: relative;
-       left: 250px;
-       margin-top: 25px;
-    }
-}
-@media screen and (max-width:1000px) and (min-width:200px){
-    #raquetasHead {
-       font-size: $font-size-sm;
-       position: relative;
-       left: 250px;
-       margin-bottom: 25px;
-    }
-}
-
-@media screen and (max-width:360px) and (min-width:200px){
-    .img-fluid {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-@media screen and (max-width:1000px) and (min-width:200px){
-    .contenedorPadreRaquetasHead {
+        font-size: $font-size-sm;
+        position: relative;
+        left: 250px;
+        margin-top: 25px;
+     }
+     #raquetasHead {
+        font-size: $font-size-sm;
+        position: relative;
+        left: 250px;
+        margin-bottom: 25px;
+     }
+     .contenedorPadreRaquetasHead {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
       
     }
 }
+
+@media screen and (max-width:375px){
+    .h1TituloPaginas {
+        font-size: $font-size-sm;
+        width: max-content;
+        position: relative;
+        left: 180px;
+    }
+    .navbar-expand-sm{
+        position: sticky;
+        
+    }
+    .img-fluid {
+        width: 30px;
+        height: 30px;
+        visibility: hidden;
+    }
+    .divRaqueta{
+        position: relative;
+        right: 90px;
+        width: 90%;
+        height: 90%;
+    }
+    #raquetasWilson{
+        position: relative;
+        left: 150px;
+    }
+    #raquetasHead{
+        position: relative;
+        left: 150px;
+    }
+}
+
 
 /* INICIO Estilo de NOSOTROS */
 * {
@@ -633,13 +659,9 @@ font-size: 22px;
     }
 }
 .padreSectionInformativo{
-    display: $dF;
-    justify-content: space-evenly;
-    align-items: center;
     position: relative;
     left: 50px;
-    
-    
+    max-width: 100%;
 }
 .hijoSectionInformativo{
     background-color: #3BBDB6;
