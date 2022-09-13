@@ -1,8 +1,8 @@
-@import  'fonts',
-                 'displays',
-                 'mixins',
-                 'variables',
-                 'clases-predeterminadas-extend';
+@import 'fonts',
+'displays',
+'mixins',
+'variables',
+'clases-predeterminadas-extend';
 
 
 * {
@@ -10,7 +10,7 @@
     padding: 0;
 }
 
-header{
+header {
     display: $dF;
     min-height: 70px;
     width: 100%;
@@ -19,25 +19,27 @@ header{
     background-color: map-get($colores, "primario");
 }
 
-header nav{
+header nav {
     width: 100%;
     max-width: 100%;
     margin: 10px auto;
 }
-header nav ul li a:hover{
-    background-color: map-get($colores, "amarillo oscuro");
-}
-.dropdown-item:hover{
+
+header nav ul li a:hover {
     background-color: map-get($colores, "amarillo oscuro");
 }
 
-.h1TituloPaginas{
+.dropdown-item:hover {
+    background-color: map-get($colores, "amarillo oscuro");
+}
+
+.h1TituloPaginas {
     display: $dF;
     align-items: center;
     position: relative;
 }
 
-.logo img{
+.logo img {
     height: 50px;
     margin-right: 10px;
 }
@@ -61,17 +63,20 @@ body {
     max-width: 100%;
     margin-right: 0%;
 }
+
 nav {
-        border: 2px solid;
-        font-family: $font-family;
-        font-size: $font-size-md;
-        background-color: map-get($colores, "primario");
-        position: absolute;
-   
-    }
-.navbar-expand-sm{
+    border: 2px solid;
+    font-family: $font-family;
+    font-size: $font-size-md;
+    background-color: map-get($colores, "primario");
+    position: absolute;
+
+}
+
+.navbar-expand-sm {
     max-width: 100%;
 }
+
 #contenedorPadreIndex {
     display: $dF;
 }
@@ -86,7 +91,7 @@ nav {
     font-family: $font-family;
 }
 
-.container{
+.container {
     @include cuadros(200px, 400px);
     @include textos(12px);
     overflow: auto;
@@ -94,12 +99,12 @@ nav {
     background-color: map-get($colores, "primario");
     border: solid 3px map-get($colores, "negro");
     border-radius: 5px;
-   @extend .margenCinco;
+    @extend .margenCinco;
     margin-bottom: 50px;
     padding: 50px;
 }
 
-.container-fluid{
+.container-fluid {
     max-width: 100%;
     max-height: 100%;
 }
@@ -121,7 +126,7 @@ h3 {
     border: solid 1px;
     width: 555px;
     @extend .margenUno;
-    
+
 }
 
 .mb-2 {
@@ -138,9 +143,10 @@ h3 {
 }
 
 .img-fluid {
-   @include cuadros(75px, 75px);
-   @extend .margenCinco;
+    @include cuadros(75px, 75px);
+    @extend .margenCinco;
 }
+
 .form-control {
     width: 500px;
     @extend .margenUno;
@@ -151,25 +157,28 @@ h3 {
     @extend .margenUno;
     font-size: 16px;
 }
-.consultaProducto{
-        background-color: map-get($colores, "primario");
-        border: solid 3px;
-        border-radius: 5px;
-        padding: 10px;
-        width: fit-content;
-        @extend .margenUno;
-        font-family: 'Kelvingi Rodrige';
-        font-size: 21px;
+
+.consultaProducto {
+    background-color: map-get($colores, "primario");
+    border: solid 3px;
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+    @extend .margenUno;
+    font-family: 'Kelvingi Rodrige';
+    font-size: 21px;
 }
-.contenedorExplicativo{
+
+.contenedorExplicativo {
     display: $dF;
     max-width: 100%;
     max-height: 100%;
-   @include cuadros(fit-content, fit-content);
+    @include cuadros(fit-content, fit-content);
 }
-.hijoContenedorExplicativo{
+
+.hijoContenedorExplicativo {
     background-color: map-get($colores, "primario");
-   @include textos($font-size-md);
+    @include textos($font-size-md);
     max-width: 500px;
     max-height: 500px;
     @include cuadros(fit-content, fit-content);
@@ -181,7 +190,8 @@ h3 {
     border: solid 4px;
 
 }
-.h5HijoContenedorExplicativo{
+
+.h5HijoContenedorExplicativo {
     background-color: map-get($colores, "secundario");
     @extend .fuentes;
     border-bottom: solid 4px;
@@ -198,160 +208,191 @@ footer {
     position: static;
 }
 
-@media screen and (max-width:1060px){
-    .h1TituloPaginas{
+@media screen and (max-width:1060px) {
+    .h1TituloPaginas {
         font-size: 14px;
     }
 }
-@media screen and (max-width:940px){
-    .h1TituloPaginas{
+
+@media screen and (max-width:940px) {
+    .h1TituloPaginas {
         visibility: hidden;
     }
-    .navbar-expand-sm{
+
+    .navbar-expand-sm {
         position: relative;
         right: 100px;
     }
 }
-@media screen and (max-width:840px){
-    .navbar-expand-sm{
+
+@media screen and (max-width:840px) {
+    .navbar-expand-sm {
         width: 80%;
     }
 
 }
-@media screen and (max-width:800px){
-    .navbar-expand-sm{
+
+@media screen and (max-width:800px) {
+    .navbar-expand-sm {
         width: 100%;
         font-size: 100%;
         right: 230px;
     }
-    .nav-link{
+
+    .nav-link {
         position: relative;
         left: 35px;
         text-align: center;
     }
-    .h1TituloPaginas{
+
+    .h1TituloPaginas {
         visibility: hidden;
     }
-    .logoPelota{
+
+    .logoPelota {
         visibility: hidden;
     }
 }
 
 @media screen and (max-width:580px) {
-    .mb-3{
-        max-width: 50% ;
+    .mb-3 {
+        max-width: 50%;
     }
-    .mb-2{
-        max-width: 50% ;
+
+    .mb-2 {
+        max-width: 50%;
     }
-    .form-label{
-        max-width: 50% ;
+
+    .form-label {
+        max-width: 50%;
     }
-    .form-control{
+
+    .form-control {
         max-width: 50%;
         margin: 0;
     }
-    .consultaProducto{
+
+    .consultaProducto {
         font-size: $font-size-sm;
         padding: 8px;
         max-width: 45%;
     }
 }
-@media screen and (max-width:560px){
-    .navbar-expand-sm{
+
+@media screen and (max-width:560px) {
+    .navbar-expand-sm {
         position: relative;
         right: 250px;
     }
-    .logoPelota{
+
+    .logoPelota {
         visibility: hidden;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 20px;
         left: 20px;
     }
-    .h1TituloPaginas{
-        visibility: visible ;
+
+    .h1TituloPaginas {
+        visibility: visible;
         position: relative;
         left: 20px;
         font-size: 22px;
-   }
-}
-@media screen and (max-width:540px){
-    .h1TituloPaginas{
-      position: relative;
-      left: 150px;
     }
 }
-@media screen and (max-width:414px){
-    .h1TituloPaginas{
+
+@media screen and (max-width:540px) {
+    .h1TituloPaginas {
+        position: relative;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .h1TituloPaginas {
         position: relative;
         left: 25px;
     }
 }
-@media screen and (max-width:412px){
-    .navbar-expand-sm{
+
+@media screen and (max-width:412px) {
+    .navbar-expand-sm {
         right: 290px;
     }
-    .h1TituloPaginas{
+
+    .h1TituloPaginas {
         position: relative;
         left: 20px;
     }
-    
+
 }
+
 @media screen and (max-width:360px) {
-    .container-sm{
-        font-size:$font-size-sm;
-        width:100%;
+    .container-sm {
+        font-size: $font-size-sm;
+        width: 100%;
         height: 100%;
     }
-    #tituloListadoGeneral{
+
+    #tituloListadoGeneral {
         font-size: $font-size-sm;
     }
-    body{
+
+    body {
         max-width: 100%;
     }
-    .mb-3{
-        max-width: 180px ;
+
+    .mb-3 {
+        max-width: 180px;
     }
-    .mb-2{
-        max-width: 180px ;
+
+    .mb-2 {
+        max-width: 180px;
     }
-    .form-label{
-        max-width: 180px ;
- 
+
+    .form-label {
+        max-width: 180px;
+
     }
-    .form-control{
+
+    .form-control {
         max-width: 180px;
         margin: 0;
     }
-    .navbar-expand-sm{
+
+    .navbar-expand-sm {
         width: 100%;
         right: 240px;
     }
-    .nav-link{
+
+    .nav-link {
         font-size: 14px;
         left: auto;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         font-size: 18px;
     }
-    .h1TituloPaginas{
+
+    .h1TituloPaginas {
         visibility: hidden;
         position: relative;
         right: 204px;
     }
 }
 
-@media screen and (max-width:1100px){
-  .hijoContenedorExplicativo{
-    width: 50%;
-    height: 50%;
-    top: 1px;
-    right: 1px;
-    overflow: auto;
-    margin-left: 25px;
-  }
+@media screen and (max-width:1100px) {
+    .hijoContenedorExplicativo {
+        width: 50%;
+        height: 50%;
+        top: 1px;
+        right: 1px;
+        overflow: auto;
+        margin-left: 25px;
+    }
 }
+
 //Raquetas
 * {
     margin: 0;
@@ -362,7 +403,7 @@ footer {
     text-align: center;
     font-size: $font-size-md;
     font-family: $font-family;
-    color: map-get($colores, "secundario");                              
+    color: map-get($colores, "secundario");
     background-color: map-get($colores, "negro");
     padding: 5px;
     border: solid 1px map-get($colores, "primario");
@@ -401,8 +442,10 @@ footer {
     border: 1px;
     animation: zoom 3s;
 }
-.divRaqueta:hover .proOpen{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .proOpen {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .blade98V8Rg {
@@ -410,60 +453,80 @@ footer {
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .blade98V8Rg{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .blade98V8Rg {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .blade98V8 {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .blade98V8{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .blade98V8 {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .clash100ProV2 {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .clash100ProV2{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .clash100ProV2 {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .clash100Pro {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .clash100Pro{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .clash100Pro {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .clash100Silver {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .clash100Silver{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .clash100Silver {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .rolandGarrosTeam102 {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .rolandGarrosTeam102{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .rolandGarrosTeam102 {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.proStaff97{
+
+.proStaff97 {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .proStaff97{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .proStaff97 {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 #raquetasHead {
-@extend #raquetasWilson
+    @extend #raquetasWilson
 }
 
 .contenedorPadreRaquetasHead {
@@ -473,132 +536,182 @@ footer {
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 }
-.attitudeElite{
+
+.attitudeElite {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .attitudeElite{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .attitudeElite {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.attitudePro{
+
+.attitudePro {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .attitudePro{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .attitudePro {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.extremePro{
+
+.extremePro {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .extremePro{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .extremePro {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.extremeTour{
+
+.extremeTour {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .extremeTour{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .extremeTour {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.challengeMp{
+
+.challengeMp {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .challengeMp{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .challengeMp {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.gravityTour{
+
+.gravityTour {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .gravityTour{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .gravityTour {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.prestigePro{
+
+.prestigePro {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .prestigePro{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .prestigePro {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.radicalPro{
+
+.radicalPro {
     height: 390px;
     width: 390px;
     border: 1px;
 }
-.divRaqueta:hover .radicalPro{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divRaqueta:hover .radicalPro {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1000px) {
     .contenedorPadreRaquetasWilson {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
     }
-    .divRaqueta{
+
+    .divRaqueta {
         margin-left: px;
     }
+
     #raquetasWilson {
         font-size: $font-size-sm;
         position: relative;
         left: 250px;
         margin-top: 25px;
-     }
-     #raquetasHead {
+    }
+
+    #raquetasHead {
         font-size: $font-size-sm;
         position: relative;
         left: 250px;
         margin-bottom: 25px;
-     }
-     .contenedorPadreRaquetasHead {
+    }
+
+    .contenedorPadreRaquetasHead {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
-      
+
     }
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:415) {
+    .divRaqueta {
+        position: relative;
+        right: 140px;
+        width: 90%;
+        height: 90%;
+    }
+
+    #raquetasWilson {
+        position: relative;
+        left: 150px;
+    }
+
+    #raquetasHead {
+        position: relative;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width:375px) {
     .h1TituloPaginas {
         font-size: $font-size-sm;
         width: max-content;
         position: relative;
         left: 180px;
     }
-    .navbar-expand-sm{
+
+    .navbar-expand-sm {
         position: sticky;
-        
     }
+
     .img-fluid {
         width: 30px;
         height: 30px;
         visibility: hidden;
     }
-    .divRaqueta{
+
+    .divRaqueta {
         position: relative;
         right: 90px;
         width: 90%;
         height: 90%;
     }
-    #raquetasWilson{
+
+    #raquetasWilson {
         position: relative;
         left: 150px;
     }
-    #raquetasHead{
+
+    #raquetasHead {
         position: relative;
         left: 150px;
     }
 }
-
 
 /* INICIO Estilo de NOSOTROS */
 * {
@@ -658,12 +771,15 @@ footer {
         background-color: map-get($colores, "secundario");
     }
 }
-.padreSectionInformativo{
+
+.padreSectionInformativo {
     position: relative;
     left: 50px;
     max-width: 100%;
+    top: 400px;
 }
-.hijoSectionInformativo{
+
+.hijoSectionInformativo {
     background-color: #3BBDB6;
     display: flex;
     justify-content: center;
@@ -673,68 +789,62 @@ footer {
     height: 750px;
     border-radius: 10px;
     position: relative;
-    bottom: 270px ;
-    right: 25px;
+    bottom: 290px;
+    left: -30px;
 }
-#cardSectionInformativo{
+
+#cardSectionInformativo {
     background-color: map-get($colores, "primario");
     border-radius: 5px;
+    justify-content: flex-start;
     padding: 10px;
-    position: relative;
     max-width: 500px;
     max-height: 700px;
     width: fit-content;
     font-family: 'Kelvingi Rodrige';
     font-size: 20px;
-
 }
-.parrafoCardInformativo{
+
+.parrafoCardInformativo {
     text-align: center;
 }
 
-@media screen and (max-width:1200px) and (min-width:200px){
-    .padreSectionInformativo{
-        justify-content: flex-start;
+@media screen and (max-width:1200px) {
+    .hijoSectionInformativo {
+        width: 450px;
+        height: 450px;
+        position: relative;
+        bottom: 350px;
     }
-}
 
-@media screen and (max-width:1200px) and (min-width:200px){
-.hijoSectionInformativo{
-    position: relative;
-    top: 50px;
-    width: 450px;
-    height: 450px;
-}
-}
-@media screen and (max-width:1200px) and (min-width:200px){
-    #cardSectionInformativo{
+    #cardSectionInformativo {
         font-size: $font-size-sm;
         width: 400px;
         height: 400px;
-        justify-content: flex-start;
     }
 }
 
-@media screen and (max-width:400px) and (min-width:200px){
-    #cardSectionInformativo{
-        font-size: $font-size-sm;
+@media screen and (max-width:700px) {
+    #cardSectionInformativo {
+        font-size: $font-size-xs;
         width: 500px;
-        height: 500px;
+        height: 400px;
+        overflow: auto;
     }
+
+    .hijoSectionInformativo {
+        width: 300px;
+        height: 250px;
     }
-    @media screen and (max-width:700px) and (min-width:200px){
-        #cardSectionInformativo{
-            font-size: $font-size-xs;
-            width: 500px;
-            height: 400px;
-        }
-        }
-        @media screen and (max-width:700px) and (min-width:200px){
-            .hijoSectionInformativo{
-                width: 300px;
-                height: 450px;
-            }
-        }
+}
+
+@media screen and (max-width:400px) {
+    #cardSectionInformativo {
+        font-size: $font-size-sm;
+        width: 300px;
+        height: 200px;
+    }
+}
 
 /* INICIO Estilo del html PALETAS */
 * {
@@ -746,7 +856,7 @@ footer {
     text-align: center;
     font-size: $font-size-md;
     font-family: $font-family;
-    color: map-get($colores, "secundario");                              
+    color: map-get($colores, "secundario");
     background-color: map-get($colores, "negro");
     padding: 5px;
     border: solid 1px map-get($colores, "primario");
@@ -784,8 +894,10 @@ footer {
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .belaLt{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .belaLt {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .bladeProV2 {
@@ -793,124 +905,168 @@ footer {
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .bladeProV2{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .bladeProV2 {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .belaElite {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .belaElite{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .belaElite {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .proStaffElite {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .proStaffElite{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .proStaffElite {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .proStaffTeamPadel {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
+
 .divPaleta:hover .proStaffTeamPadel {
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .proStaffLtV2 {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .proStaffLtV2{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .proStaffLtV2 {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .proStaffEliteV2 {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .proStaffEliteV2{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .proStaffEliteV2 {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .padelCupra {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .padelCupra{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .padelCupra {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 #paletasHead {
     @extend #paletasWilson
 }
 
-.headFlash{
+.headFlash {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .headFlash{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .headFlash {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.headFlashPro{
+
+.headFlashPro {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .headFlashPro{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .headFlashPro {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.headGravity{
+
+.headGravity {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .headGravity{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .headGravity {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.headGravityPro{
+
+.headGravityPro {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .headGravityPro{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .headGravityPro {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.headGravityMotion{
+
+.headGravityMotion {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .headGravityMotion{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .headGravityMotion {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.headZephyr{
+
+.headZephyr {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .headZephyr{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .headZephyr {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.headDelta{
+
+.headDelta {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .headDelta{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .headDelta {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
-.headEvoDelta{
+
+.headEvoDelta {
     width: 390px;
     height: 240px;
     border-radius: 10px;
 }
-.divPaleta:hover .headEvoDelta{
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+
+.divPaleta:hover .headEvoDelta {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .contenedorPadrePaletasHead {
@@ -921,34 +1077,89 @@ footer {
     grid-row-gap: 20px;
 }
 
-@media screen and (max-width:1000px) and (min-width:200px){
+@media screen and (max-width:1000px) {
     .contenedorPadrePaletasWilson {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
     }
-}
-@media screen and (max-width:1000px) and (min-width:200px){
-    .contenedorPadrePaletasHead {
-        grid-template-columns: 1fr;
-        grid-column-gap: 10px;
+
+    .divPaleta {
+        margin-left: px;
     }
-}
 
-
-@media screen and (max-width:1000px) and (min-width:200px){
     #paletasWilson {
-       font-size: $font-size-sm;
-       position: relative;
-       left: 250px;
-       margin-top: 25px;
-    }
-}
-@media screen and (max-width:1000px) and (min-width:200px){
-    #paletasHead {
         font-size: $font-size-sm;
         position: relative;
         left: 250px;
         margin-top: 25px;
+    }
+
+    #paletasHead {
+        font-size: $font-size-sm;
+        position: relative;
+        left: 250px;
+        margin-bottom: 25px;
+    }
+
+    .contenedorPadrePaletasHead {
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+
+    }
+}
+
+@media screen and (max-width:415) {
+    .divPaleta {
+        position: relative;
+        right: 140px;
+        width: 90%;
+        height: 90%;
+    }
+
+    #paletasWilson {
+        position: relative;
+        left: 150px;
+    }
+
+    #paletasHead {
+        position: relative;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .h1TituloPaginas {
+        font-size: 20px;
+        width: max-content;
+        position: relative;
+        left: 120px;
+    }
+
+    .navbar-expand-sm {
+        position: sticky;
+    }
+
+    .img-fluid {
+        width: 30px;
+        height: 30px;
+        visibility: hidden;
+    }
+
+    .divPaleta {
+        position: relative;
+        right: 90px;
+        width: 90%;
+        height: 90%;
+    }
+
+    #paletasWilson {
+        position: relative;
+        left: 150px;
+    }
+
+    #paletasHead {
+        position: relative;
+        left: 150px;
     }
 }
 
@@ -982,9 +1193,12 @@ footer {
     border-radius: 5px;
 
 }
+
 .divAccesorios:hover {
-    -webkit-transform:scale(1.1);transform:scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 .contenedorPadreAccesoriosWilson {
     display: $dG;
     grid-template-columns: 1fr 1fr 1fr;
@@ -994,9 +1208,8 @@ footer {
     margin-left: 25px;
 }
 
-
 #accesoriosHead {
- @extend #accesoriosWilson
+    @extend #accesoriosWilson
 }
 
 .contenedorPadreAccesoriosHead {
@@ -1008,10 +1221,15 @@ footer {
     margin-left: 25px;
 }
 
-@media screen and (max-width:500px){
-   .logo{
-    visibility: hidden;
-   }
+@media screen and (max-width:900px) {
+    .contenedorPadreAccesoriosWilson {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
+    .contenedorPadreAccesoriosHead {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -1019,50 +1237,59 @@ footer {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
     }
-}
-@media screen and (max-width:600px) {
+
     .contenedorPadreAccesoriosWilson {
         grid-template-columns: 1fr;
         grid-column-gap: 10px;
     }
 }
-@media screen and (max-width:600px) {
-    #accesoriosHead{
-      position: relative;
-      left: 100px;
+
+#accesoriosHead {
+    position: relative;
+    left: 100px;
+}
+
+#accesoriosWilson {
+    position: relative;
+    left: 100px;
+}
+
+#accesoriosHead {
+    position: relative;
+    left: 300px;
+}
+
+#accesoriosWilson {
+    position: relative;
+    left: 300px;
+}
+@media screen and (max-width:500px) {
+    .logo {
+        visibility: hidden;
     }
 }
-@media screen and (max-width:600px) {
-    #accesoriosWilson{
-      position: relative;
-      left: 100px;
+@media screen and (max-width:415px){
+    #accesoriosHead {
+        position: relative;
+        left: 140px;
+    }
+    
+    #accesoriosWilson {
+        position: relative;
+        left: 140px;
     }
 }
-@media screen and (min-width:600px) {
-    #accesoriosHead{
-      position: relative;
-      left: 300px;
+@media screen and (max-width:375px){
+    #accesoriosHead {
+        position: relative;
+        left: 140px;
     }
-}
-@media screen and (max-width:600px) {
-    #accesoriosWilson{
-      position: relative;
-      left: 300px;
+    
+    #accesoriosWilson {
+        position: relative;
+        left: 140px;
     }
 }
 
-@media screen and (max-width:900px) and (min-width:580px){
-    .contenedorPadreAccesoriosWilson {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
-    }
-}
-
-@media screen and (max-width:900px) and (min-width:580px) {
-    .contenedorPadreAccesoriosHead {
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
-    }
-}
 
 /* FIN ESTILO ACCESORIOS */
