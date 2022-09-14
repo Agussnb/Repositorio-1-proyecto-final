@@ -198,7 +198,16 @@ h3 {
 }
 
 footer {
-    margin-top: 200px;
+   position: relative;
+   top: 350px;
+    background-color: map-get($colores, "primario");
+    .copyright{
+        background-color: map-get($colores, "primario");
+        font-weight: 600;
+        color: black;
+        padding: 1px;
+        text-align: center;
+    }
 }
 
 .divFooter {
