@@ -109,6 +109,16 @@ nav {
     max-height: 100%;
 }
 
+.carousel-item{
+    height: 50%;
+}
+.parrafoCarrousel{
+    background-color: rgb(31, 30, 30);
+}
+.h5Carrousel{
+    background-color: rgb(31, 30, 30);
+}
+
 h3 {
     background-color: map-get($colores, "primario");
     border: solid 3px;
@@ -183,12 +193,8 @@ h3 {
     max-height: 500px;
     @include cuadros(fit-content, fit-content);
     display: $dF;
-    position: relative;
-    right: -600px;
-    top: -750px;
     flex-direction: column;
     border: solid 4px;
-
 }
 
 .h5HijoContenedorExplicativo {
