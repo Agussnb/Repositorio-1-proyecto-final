@@ -445,13 +445,14 @@ footer {
     height: 400px;
     background-color: map-get($colores, "negro");
     color: map-get($colores, "blanco");
-    display: $dIB;
-    margin-left: 100px;
+    // display: $dIB;
+    position: relative;
+    left: 100px;
     margin-bottom: 50px;
     border: 2px solid map-get($colores, "primario");
     border-radius: 5px;
     padding: 2px;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .proOpen {
@@ -651,10 +652,6 @@ footer {
         grid-column-gap: 10px;
     }
 
-    .divRaqueta {
-        margin-left: px;
-    }
-
     #raquetasWilson {
         font-size: $font-size-sm;
         position: relative;
@@ -676,10 +673,10 @@ footer {
     }
 }
 
-@media screen and (max-width:415) {
+@media screen and (max-width:415px) {
     .divRaqueta {
         position: relative;
-        right: 140px;
+        left: 0px;
         width: 90%;
         height: 90%;
     }
@@ -712,10 +709,9 @@ footer {
         height: 30px;
         visibility: hidden;
     }
-
     .divRaqueta {
         position: relative;
-        right: 90px;
+        right: 100px;
         width: 90%;
         height: 90%;
     }
@@ -1129,12 +1125,12 @@ footer {
     }
 }
 
-@media screen and (max-width:415) {
+@media screen and (max-width:415px) {
     .divPaleta {
         position: relative;
-        right: 140px;
+        right: 90px;
         width: 90%;
-        height: 90%;
+        height: 85%;
     }
 
     #paletasWilson {

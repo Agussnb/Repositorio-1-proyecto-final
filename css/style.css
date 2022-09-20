@@ -363,13 +363,12 @@ footer {
   height: 400px;
   background-color: #000000;
   color: #FFF;
-  display: inline-block;
-  margin-left: 100px;
+  position: relative;
+  left: 100px;
   margin-bottom: 50px;
   border: 2px solid #FFFF00;
   border-radius: 5px;
-  padding: 2px;
-  overflow: hidden; }
+  padding: 2px; }
 
 .proOpen {
   height: 390px;
@@ -527,8 +526,6 @@ footer {
   .contenedorPadreRaquetasWilson {
     grid-template-columns: 1fr;
     grid-column-gap: 10px; }
-  .divRaqueta {
-    margin-left: px; }
   #raquetasWilson, #raquetasHead {
     font-size: small;
     position: relative;
@@ -543,10 +540,10 @@ footer {
     grid-template-columns: 1fr;
     grid-column-gap: 10px; } }
 
-@media screen and (max-width: 415) {
+@media screen and (max-width: 415px) {
   .divRaqueta {
     position: relative;
-    right: 140px;
+    left: 0px;
     width: 90%;
     height: 90%; }
   #raquetasWilson, #raquetasHead {
@@ -570,7 +567,7 @@ footer {
     visibility: hidden; }
   .divRaqueta {
     position: relative;
-    right: 90px;
+    right: 100px;
     width: 90%;
     height: 90%; }
   #raquetasWilson, #raquetasHead {
@@ -900,12 +897,12 @@ footer {
     grid-template-columns: 1fr;
     grid-column-gap: 10px; } }
 
-@media screen and (max-width: 415) {
+@media screen and (max-width: 415px) {
   .divPaleta {
     position: relative;
-    right: 140px;
+    right: 90px;
     width: 90%;
-    height: 90%; }
+    height: 85%; }
   #paletasWilson, #paletasHead {
     position: relative;
     left: 150px; }
