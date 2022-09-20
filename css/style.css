@@ -217,7 +217,9 @@ footer {
 
 @media screen and (max-width: 1060px) {
   .h1TituloPaginas {
-    font-size: 14px; } }
+    font-size: 14px; }
+  body {
+    overflow-x: hidden; } }
 
 @media screen and (max-width: 940px) {
   .h1TituloPaginas {
@@ -597,7 +599,8 @@ footer {
   margin-bottom: 5px;
   border-radius: 8px;
   animation-name: color;
-  animation-duration: 5s; }
+  animation-duration: 5s;
+  box-shadow: 10px 5px 5px 1px black; }
 
 @keyframes color {
   from {
@@ -617,7 +620,8 @@ footer {
   left: 20px;
   top: 25px;
   animation-name: color;
-  animation-duration: 5s; }
+  animation-duration: 5s;
+  box-shadow: 10px 5px 5px 1px black; }
 
 @keyframes color {
   from {
@@ -642,7 +646,8 @@ footer {
   border-radius: 10px;
   position: relative;
   bottom: 290px;
-  left: -30px; }
+  left: -30px;
+  box-shadow: 10px 5px 5px 1px black; }
 
 #cardSectionInformativo {
   background-color: #FFFF00;
